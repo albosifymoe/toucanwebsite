@@ -3,12 +3,15 @@ import path from 'node:path';
 import {stat} from 'node:fs/promises';
 import {createReadStream} from 'node:fs';
 const root=path.resolve('dist');
+const videoRoot=path.resolve('../production/browser-delivery');
 const mime={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.mjs':'text/javascript; charset=utf-8','.json':'application/json','.webp':'image/webp','.png':'image/png','.jpg':'image/jpeg','.woff2':'font/woff2','.mp4':'video/mp4','.webm':'video/webm'};
 http.createServer(async(req,res)=>{
   try{
     const pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname);
-    const target=path.resolve(root,'.'+(pathname==='/'?'/index.html':pathname));
-    if(!target.startsWith(root+path.sep)){res.writeHead(404);res.end('Not found');return;}
+    const isMovie=/^\/assets\/pass-0[123]-(landscape|portrait)-(2k|4k)\.mp4$/.test(pathname);
+    const allowedRoot=isMovie?videoRoot:root;
+    const target=isMovie?path.join(videoRoot,path.basename(pathname)):path.resolve(root,'.'+(pathname==='/'?'/index.html':pathname));
+    if(!target.startsWith(allowedRoot+path.sep)){res.writeHead(404);res.end('Not found');return;}
     const info=await stat(target);if(!info.isFile())throw new Error('Not a file');
     const headers={'Content-Type':mime[path.extname(target)]||'application/octet-stream','Cache-Control':'no-cache','X-Content-Type-Options':'nosniff','Accept-Ranges':'bytes'};
     let start=0,end=info.size-1,status=200;
