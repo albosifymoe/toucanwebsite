@@ -14,4 +14,4 @@ Run `node server.mjs` and open `http://127.0.0.1:4173/`. The local server suppor
 
 ## Validation
 
-Ten focused controller/timing tests pass. All twelve movie delivery files serve valid byte ranges. Browser layout, real touch-device behavior, accessibility and performance remain release checks. The live WordPress site has not been replaced.
+Ten focused controller/timing tests pass. All twelve movie delivery files serve valid byte ranges. Forward and reverse video scrubbing were verified in the actual 604×516 embedded preview after correcting the short-window fallback. Full responsive layout, real touch-device behavior, accessibility and performance remain release checks. The live WordPress site has not been replaced.

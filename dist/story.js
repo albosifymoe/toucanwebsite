@@ -7,7 +7,7 @@ const chapterLinks=[...document.querySelectorAll('.chapter-links a')],toggle=doc
 const reduce=matchMedia('(prefers-reduced-motion: reduce)');
 const film=new ScrollFilm(document.querySelector('.story-stage'),films,()=>requestRender());
 let motion=false,paused=false,top=0,distance=1,progress=0,lastY=scrollY,direction=0,frameRequest=0,settleTimer=0,animation=0,navigating=false,pointerDown=false,lastInput='pointer';
-const supportsMotion=()=>!reduce.matches&&innerHeight>=620&&innerWidth>=360;
+const supportsMotion=()=>!reduce.matches&&innerHeight>=420&&innerWidth>=360;
 const measure=()=>{top=story.getBoundingClientRect().top+scrollY;distance=Math.max(1,story.offsetHeight-innerHeight);};
 function cancelMovement(){cancelAnimationFrame(animation);animation=0;navigating=false;clearTimeout(settleTimer);root.style.scrollBehavior='';}
 function animateTo(destination,duration=520,finish){
