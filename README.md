@@ -6,9 +6,9 @@ Repository: https://github.com/albosifymoe/toucanwebsite
 
 The deployable website is in `dist/`. Upload the contents of that directory to the website's document root; the repository root contains development tools and is not the public website. The hosted site needs only static file serving, with JavaScript modules and MP4 byte-range requests supported. Node.js is used for local development and page generation, not for the hosted website.
 
-This is the current staging version, not a production release. Pages retain `noindex,nofollow`, the contact page prepares an email draft, and most animation videos still use the external URLs in `dist/film-manifest.mjs`. Production deployment must address indexing, old-page redirects, permanent video hosting, and the desired contact workflow.
+This is the current staging version, not a production release. Pages retain `noindex,nofollow`, the contact page prepares an email draft, and all animation videos ship in `dist/assets/` from the site's own origin. Production deployment must address fresh backups and recovery testing, indexing, old-page redirects, and the desired contact workflow.
 
-The `planning/` and `production/` paths referenced below belong to the original parent workspace and are not included in this repository. A standalone clone includes the generated pages and browser images, but the local preview's five unchanged animation passages require the original `../production/browser-delivery/` files. Hosted previews use the external video URLs instead. The import/optimization utilities also rely on the parent workspace; they are not needed to deploy `dist/`.
+The `planning/` and `production/` paths referenced below belong to the original parent workspace and are not included in this repository. A standalone clone includes all generated pages, browser images, and browser videos. The historical import/optimization utilities rely on the parent workspace; they are not needed to preview or deploy `dist/`.
 
 The cPanel deployment configuration targets **staging only** at `/home/toucanly/staging.toucan.ly`. In cPanel Git Version Control, use **Update from Remote**, then **Deploy HEAD Commit**. Pushing to GitHub alone does not deploy. The script checks the target, rejects symlinks, keeps a timestamped archive of an existing staging site in `/home/toucanly/deployment-backups/`, and copies only `dist/` plus the staging server rules. It never deletes files or modifies `/home/toucanly/public_html`.
 
@@ -22,7 +22,7 @@ The hero contains four reading stops joined by three real animation passages. De
 
 Each movie has a 2K and 4K browser version. The controller selects the appropriate tier, uses one outstanding seek, retains at most two decoders, and falls back to 4K stills on media errors, reduced motion or constrained layouts.
 
-The original high-resolution production files and complete generation records are in the parent workspace, outside this deployable site. Five unchanged browser passages are preserved in ../production/browser-delivery/ and served locally by server.mjs; hosted pages use their existing media URLs. The repaired portrait Create → Launch passage is included in dist/assets in 2K and 4K and must ship with the site. No further generative jobs are authorized following the user's credit stop on 15 September 2026.
+The original high-resolution production files and complete generation records are in the parent workspace, outside this deployable site. Five unchanged browser passages are preserved in ../production/browser-delivery/ and copied into dist/assets in 2K and 4K. The repaired portrait Create → Launch passage is also included in dist/assets in both tiers. All twelve files must ship with the site. No further generative jobs are authorized following the user's credit stop on 15 September 2026.
 
 ## Local preview
 
@@ -48,4 +48,4 @@ Run `node verify-site.mjs` while the preview runs on port 4174, or set `PREVIEW_
 
 Run `node --test story-model.test.mjs film-controller.test.mjs` (12 focused cases). The 16 September repair adds persistent frame visibility, neighbor preparation, explicit reading/action spans, interruption and frame-interior seeking. Automatic snapping and whole-scene dissolves are removed.
 
-Actual browser frame-coverage captures and the source repair are documented in [the implementation report](../planning/MOTION-FIX-IMPLEMENTATION.md). All six forward passages and reverse traversal are checked at desktop and portrait sizes. Real touch hardware, Safari and production-CDN performance remain release checks. The repaired local prototype has not been redeployed to the private hosted preview or the live WordPress site.
+Actual browser frame-coverage captures and the source repair are documented in [the implementation report](../planning/MOTION-FIX-IMPLEMENTATION.md). All six forward passages and reverse traversal are checked at desktop and portrait sizes. Real touch hardware, Safari and hosting performance remain release checks. The repaired prototype is deployed to https://staging.toucan.ly; the live WordPress site remains unchanged.
