@@ -1,0 +1,40 @@
+/* A usable mobile hero is the default, including when JavaScript is unavailable. */
+.mobile-story-actions{display:contents}
+.mobile-story-watch{display:none}
+.mobile-story-dialog:not([open]){display:none}
+.mobile-story-dialog{width:min(94vw,440px);max-height:94vh;max-height:94svh;padding:14px;border:1px solid #ffffff40;border-radius:14px;background:#063b39;color:#fff;overflow:auto;overscroll-behavior:contain}
+.mobile-story-dialog::backdrop{background:#001d1be6}
+.mobile-story-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:10px}
+.mobile-story-heading h2{font:500 18px/1.4 'Poppins',sans-serif;margin:0}
+.mobile-story-close{font:500 14px/1.4 'Poppins',sans-serif;min-height:44px;padding:10px 16px;background:transparent;color:inherit;border:1px solid #ffffff80;border-radius:8px;cursor:pointer}
+.mobile-story-dialog video{display:block;width:100%;height:auto;max-height:calc(94vh - 100px);max-height:calc(94svh - 100px);object-fit:contain;background:#063b39}
+.mobile-story-error{font-size:14px;line-height:1.6;margin:12px 0 0}
+html.mobile-story-open{overflow:hidden}
+@media(max-width:900px),(pointer:coarse){
+  html{scroll-behavior:auto}
+  html .story,html.is-motion .story{height:auto;position:relative}
+  html .story-stage,html.is-motion .story-stage{position:relative;top:auto;height:auto;overflow:hidden;opacity:1;transition:none}
+  html .story .scene{display:none}
+  html .story #discover{display:block;position:relative;inset:auto;min-height:760px;min-height:max(760px,100svh);opacity:1!important;visibility:visible;pointer-events:auto;background:#063b39}
+  html .story #discover .scene-art{visibility:visible;will-change:auto;transform:none!important}
+  html .story #discover .scene-copy{opacity:1!important;transform:none!important;will-change:auto;transition:none}
+  html .story .motion-film,html .story .story-controls{display:none!important}
+  .story .chapter{display:none}
+  .mobile-story-actions{display:flex;align-items:center;flex-wrap:wrap;gap:8px 16px}
+  .mobile-story-actions .button{gap:16px}
+  .mobile-story-watch{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-size:14px;font-weight:500;text-underline-offset:5px}
+}
+@media(max-width:900px) and (orientation:portrait),(pointer:coarse) and (orientation:portrait){
+  html .story #discover .scene-copy{width:100%;max-width:none;padding:110px 6.2vw 0}
+  html .story #discover .scene-art img{object-position:center bottom}
+  .story #discover h1{font-size:clamp(34px,5.6vw,48px);line-height:1.1;margin-bottom:18px}
+  .story #discover h1 br{display:none}
+  .story #discover .support{max-width:450px}
+}
+@media(max-width:520px) and (orientation:portrait){
+  html .story #discover .scene-copy{padding-top:95px}
+  .story #discover h1{font-size:36px}
+}
+@media(max-width:900px) and (orientation:landscape),(pointer:coarse) and (orientation:landscape){
+  html .story #discover{min-height:580px;min-height:max(580px,100svh)}
+}

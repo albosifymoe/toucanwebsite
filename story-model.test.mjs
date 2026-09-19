@@ -2,11 +2,16 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import * as story from './dist/story-model.mjs';
 const {storyFrame,timeline,STORY_LENGTH,chapterPositions}=story;
-test('narrow portrait phones keep the animated story when motion is allowed',()=>{
-  assert.equal(story.supportsStoryMotion?.(false,320,568),true);
-  assert.equal(story.supportsStoryMotion?.(false,390,844),true);
-  assert.equal(story.supportsStoryMotion?.(false,320,419),false);
-  assert.equal(story.supportsStoryMotion?.(true,320,568),false);
+test('phones and touch-first tablets never enter the video-seeking scroll mode',()=>{
+  for(const [width,height,coarse] of [[320,568,false],[390,844,true],[844,390,true],[1024,1366,true],[1366,1024,true]]){
+    assert.equal(story.supportsStoryMotion(false,width,height,coarse),false);
+  }
+});
+
+test('desktop scroll mode still respects reduced motion and short viewports',()=>{
+  assert.equal(story.supportsStoryMotion(false,1440,900,false),true);
+  assert.equal(story.supportsStoryMotion(true,1440,900,false),false);
+  assert.equal(story.supportsStoryMotion(false,1440,419,false),false);
 });
 test('each chapter destination is a settled reading state',()=>{
   chapterPositions.forEach((position,scene)=>{assert.equal(storyFrame(position).settled,true);assert.equal(storyFrame(position).scene,scene);});

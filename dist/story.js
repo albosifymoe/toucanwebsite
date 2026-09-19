@@ -1,12 +1,13 @@
-import {clamp,smooth,storyFrame,STORY_LENGTH,chapterPositions,supportsStoryMotion} from './story-model.mjs';
+import {clamp,smooth,storyFrame,STORY_LENGTH,chapterPositions,supportsStoryMotion} from './story-model.mjs?v=mobile-fallback-1';
 import {ScrollFilm} from './film-controller.mjs';
 import {films} from './film-manifest.mjs';
 const root=document.documentElement,story=document.querySelector('.story'),stage=document.querySelector('.story-stage');
 const scenes=[...document.querySelectorAll('.scene')],controls=document.querySelector('.story-controls');
 const chapterLinks=[...document.querySelectorAll('.chapter-links a')],toggle=document.querySelector('.motion-toggle');
 const reduce=matchMedia('(prefers-reduced-motion: reduce)'),film=new ScrollFilm(stage,films,()=>requestRender());
+const coarse=matchMedia('(pointer: coarse)'),mobile=matchMedia('(max-width: 900px), (pointer: coarse)');
 let motion=false,paused=false,top=0,distance=1,progress=0,lastY=scrollY,direction=1,frameRequest=0,animation=0,jumpTimer=0;
-const supportsMotion=()=>supportsStoryMotion(reduce.matches,innerWidth,innerHeight);
+const supportsMotion=()=>supportsStoryMotion(reduce.matches,innerWidth,innerHeight,coarse.matches);
 const measure=()=>{top=story.getBoundingClientRect().top+scrollY;distance=Math.max(1,story.offsetHeight-innerHeight);};
 const position=()=>clamp((scrollY-top)/distance*STORY_LENGTH,0,STORY_LENGTH),yFor=unit=>top+unit/STORY_LENGTH*distance;
 function cancelMovement(){cancelAnimationFrame(animation);animation=0;clearTimeout(jumpTimer);stage.classList.remove('is-jumping');root.style.scrollBehavior='';}
@@ -33,13 +34,13 @@ function setMode(){
   const previous=motion,oldPosition=progress,wasInStory=scrollY>=top&&scrollY<=top+distance;
   motion=supportsMotion()&&!paused;cancelMovement();root.classList.toggle('is-motion',motion);root.classList.toggle('is-static',paused&&!reduce.matches);
   story.style.setProperty('--story-height',`${(STORY_LENGTH+1)*100}svh`);
-  controls.hidden=!motion&&!paused;toggle.textContent=paused?'Resume motion':'Pause motion';toggle.setAttribute('aria-pressed',String(paused));
+  controls.hidden=mobile.matches||(!motion&&!paused);toggle.textContent=paused?'Resume motion':'Pause motion';toggle.setAttribute('aria-pressed',String(paused));
   if(!motion){film.disable();scenes.forEach(scene=>{scene.removeAttribute('aria-hidden');scene.inert=false;scene.style.opacity='';scene.style.zIndex='';scene.querySelector('.scene-art').style.transform='';scene.querySelector('.scene-copy').style.opacity='';scene.querySelector('.scene-copy').style.transform='';});}
   measure();
-  if(document.readyState==='complete'&&wasInStory){const active=storyFrame(oldPosition).active;if(previous!==motion)window.scrollTo({top:motion?yFor(chapterPositions[active]):scenes[active].getBoundingClientRect().top+scrollY,behavior:'instant'});else if(motion)window.scrollTo({top:yFor(oldPosition),behavior:'instant'});}
+  if(document.readyState==='complete'&&wasInStory){const active=mobile.matches?0:storyFrame(oldPosition).active;if(previous!==motion)window.scrollTo({top:motion?yFor(chapterPositions[active]):scenes[active].getBoundingClientRect().top+scrollY,behavior:'instant'});else if(motion)window.scrollTo({top:yFor(oldPosition),behavior:'instant'});}
   lastY=scrollY;requestRender();
 }
-function destinationFor(target){const index=scenes.indexOf(target);return motion&&index>=0?yFor(chapterPositions[index]):Math.max(0,target.getBoundingClientRect().top+scrollY-(index<0?105:0));}
+function destinationFor(target){const index=scenes.indexOf(target);if(mobile.matches&&index>=0)target=scenes[0];return motion&&index>=0?yFor(chapterPositions[index]):Math.max(0,target.getBoundingClientRect().top+scrollY-(index<0?105:0));}
 function goTo(target,focus=false){
   const index=scenes.indexOf(target),destination=destinationFor(target);
   const finish=()=>{if(focus){if(!target.hasAttribute('tabindex'))target.setAttribute('tabindex','-1');target.focus({preventScroll:true});}};
@@ -48,13 +49,14 @@ function goTo(target,focus=false){
     else{cancelMovement();stage.classList.add('is-jumping');jumpTimer=setTimeout(()=>{film.clearPresentation();window.scrollTo({top:destination,behavior:'instant'});requestRender();stage.classList.remove('is-jumping');finish();},140);}
   }else animateTo(destination,520,finish);
 }
-document.addEventListener('click',event=>{const link=event.target.closest('a[href^="#"]');if(!link)return;const target=document.getElementById(decodeURIComponent(link.hash.slice(1)));if(!target)return;event.preventDefault();history.pushState(null,'',link.hash);goTo(target,!scenes.includes(target));});
+document.addEventListener('click',event=>{if(mobile.matches)return;const link=event.target.closest('a[href^="#"]');if(!link)return;const target=document.getElementById(decodeURIComponent(link.hash.slice(1)));if(!target)return;event.preventDefault();history.pushState(null,'',link.hash);goTo(target,!scenes.includes(target));});
 chapterLinks.forEach((link,index)=>link.addEventListener('keydown',event=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;event.preventDefault();const next=event.key==='Home'?0:event.key==='End'?3:clamp(index+(event.key==='ArrowRight'?1:-1),0,3);chapterLinks[next].focus();goTo(scenes[next]);}));
 toggle.addEventListener('click',()=>{paused=!paused;setMode();toggle.focus({preventScroll:true});});
-addEventListener('scroll',()=>{const delta=scrollY-lastY;if(Math.abs(delta)>.5)direction=Math.sign(delta);lastY=scrollY;requestRender();},{passive:true});
+addEventListener('scroll',()=>{if(!motion)return;const delta=scrollY-lastY;if(Math.abs(delta)>.5)direction=Math.sign(delta);lastY=scrollY;requestRender();},{passive:true});
 for(const type of ['wheel','touchstart','pointerdown'])addEventListener(type,cancelMovement,{passive:true});
 addEventListener('keydown',event=>{if(!event.defaultPrevented&&['Tab','Escape','PageDown','PageUp','ArrowDown','ArrowUp',' ','Home','End'].includes(event.key))cancelMovement();});
-addEventListener('hashchange',()=>{const target=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(target)goTo(target);});
-let resizeTimer;addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(setMode,100);},{passive:true});
+addEventListener('hashchange',()=>{if(mobile.matches)return;const target=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(target)goTo(target);});
+let resizeTimer,lastWidth=innerWidth;addEventListener('resize',()=>{if(mobile.matches&&!motion&&lastWidth===innerWidth)return;lastWidth=innerWidth;clearTimeout(resizeTimer);resizeTimer=setTimeout(setMode,100);},{passive:true});
+coarse.addEventListener('change',setMode);
 reduce.addEventListener('change',()=>{paused=false;setMode();});addEventListener('pageshow',()=>{measure();requestRender();});setMode();
 addEventListener('load',()=>{measure();const target=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(target)window.scrollTo({top:destinationFor(target),behavior:'instant'});requestRender();},{once:true});
