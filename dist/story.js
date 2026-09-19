@@ -1,4 +1,4 @@
-import {clamp,smooth,storyFrame,STORY_LENGTH,chapterPositions} from './story-model.mjs';
+import {clamp,smooth,storyFrame,STORY_LENGTH,chapterPositions,supportsStoryMotion} from './story-model.mjs';
 import {ScrollFilm} from './film-controller.mjs';
 import {films} from './film-manifest.mjs';
 const root=document.documentElement,story=document.querySelector('.story'),stage=document.querySelector('.story-stage');
@@ -6,7 +6,7 @@ const scenes=[...document.querySelectorAll('.scene')],controls=document.querySel
 const chapterLinks=[...document.querySelectorAll('.chapter-links a')],toggle=document.querySelector('.motion-toggle');
 const reduce=matchMedia('(prefers-reduced-motion: reduce)'),film=new ScrollFilm(stage,films,()=>requestRender());
 let motion=false,paused=false,top=0,distance=1,progress=0,lastY=scrollY,direction=1,frameRequest=0,animation=0,jumpTimer=0;
-const supportsMotion=()=>!reduce.matches&&innerHeight>=420&&innerWidth>=360;
+const supportsMotion=()=>supportsStoryMotion(reduce.matches,innerWidth,innerHeight);
 const measure=()=>{top=story.getBoundingClientRect().top+scrollY;distance=Math.max(1,story.offsetHeight-innerHeight);};
 const position=()=>clamp((scrollY-top)/distance*STORY_LENGTH,0,STORY_LENGTH),yFor=unit=>top+unit/STORY_LENGTH*distance;
 function cancelMovement(){cancelAnimationFrame(animation);animation=0;clearTimeout(jumpTimer);stage.classList.remove('is-jumping');root.style.scrollBehavior='';}

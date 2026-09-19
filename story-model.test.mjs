@@ -1,6 +1,13 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {storyFrame,timeline,STORY_LENGTH,chapterPositions} from './dist/story-model.mjs';
+import * as story from './dist/story-model.mjs';
+const {storyFrame,timeline,STORY_LENGTH,chapterPositions}=story;
+test('narrow portrait phones keep the animated story when motion is allowed',()=>{
+  assert.equal(story.supportsStoryMotion?.(false,320,568),true);
+  assert.equal(story.supportsStoryMotion?.(false,390,844),true);
+  assert.equal(story.supportsStoryMotion?.(false,320,419),false);
+  assert.equal(story.supportsStoryMotion?.(true,320,568),false);
+});
 test('each chapter destination is a settled reading state',()=>{
   chapterPositions.forEach((position,scene)=>{assert.equal(storyFrame(position).settled,true);assert.equal(storyFrame(position).scene,scene);});
   assert.equal(storyFrame(-1).scene,0);assert.equal(storyFrame(STORY_LENGTH+1).scene,3);

@@ -1,5 +1,6 @@
 export const clamp=(value,min=0,max=1)=>Math.min(max,Math.max(min,value));
 export const smooth=value=>{const t=clamp(value);return t*t*(3-2*t);};
+export const supportsStoryMotion=(reducedMotion,viewportWidth,viewportHeight)=>!reducedMotion&&viewportWidth>0&&viewportHeight>=420;
 // Units are viewport heights. Reading holds and action have independent space.
 export const timeline=[
   {kind:'hold',scene:0,length:.35}, {kind:'motion',passage:0,length:2},

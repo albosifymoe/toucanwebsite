@@ -5,7 +5,8 @@ const assets=JSON.parse(await readFile(new URL('./project-assets.json',import.me
 const projects=assets.map(p=>({...p,...editorial.find(e=>e.slug===p.slug)}));
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const url=p=>`/work/${p.slug}.html`;
-const arrow='<span aria-hidden="true">↗</span>';
+const arrowGlyph='↗\uFE0E';
+const arrow=`<span class="text-arrow" aria-hidden="true">${arrowGlyph}</span>`;
 const img=(image,alt='',eager=false,cls='')=>`<img ${cls?`class="${cls}"`:''} src="/${image.src}" width="${image.width}" height="${image.height}" alt="${esc(alt)}" ${eager?'fetchpriority="high"':'loading="lazy"'} decoding="async">`;
 const profile='https://drive.google.com/file/d/1llPGVRoRnY4LaYLOzYs3kmq6hX93z_ny/view?usp=sharing';
 function header(active=''){
@@ -16,7 +17,7 @@ function footer(){return `<footer class="site-footer"><div><a href="/" class="fo
 const cta=()=>`<section class="page-cta"><p class="section-label">Your next chapter</p><div><h2>Have a spark?</h2><a class="button button-light" href="/contact.html">Let's make something ${arrow}</a></div></section>`;
 function layout(title,description,active,body){return `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#063b39"><meta name="description" content="${esc(description)}"><title>${esc(title)} — Toucan Studio</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/pages.css"><script type="module" src="/site.js"></script></head><body class="inner-page" id="top"><a class="skip-link" href="#main">Skip to content</a>${header(active)}<main id="main" tabindex="-1">${body}</main>${footer()}</body></html>\n`;}
-function card(p,index=0){return `<article class="work-card" data-category="${esc(p.category)}"><a href="${url(p)}"><div class="work-image">${img(p.cover,'',index<2)}<span class="card-arrow" aria-hidden="true">↗</span></div><div class="card-caption"><h2>${esc(p.title)}</h2><span>${esc(p.category)}</span></div><p>${esc(p.line)}</p></a></article>`;}
+function card(p,index=0){return `<article class="work-card" data-category="${esc(p.category)}"><a href="${url(p)}"><div class="work-image">${img(p.cover,'',index<2)}<span class="card-arrow text-arrow" aria-hidden="true">${arrowGlyph}</span></div><div class="card-caption"><h2>${esc(p.title)}</h2><span>${esc(p.category)}</span></div><p>${esc(p.line)}</p></a></article>`;}
 const write=(name,html)=>writeFile(new URL(name,dist),html);
 await mkdir(new URL('work/',dist),{recursive:true});
 
@@ -61,11 +62,12 @@ home=home.replace(/<footer[\s\S]*?<\/footer>/,footer());
 home=home.replace('<body>','<body id="top">');
 for(const p of projects)home=home.replaceAll(p.source,url(p));
 home=home.replace('href="https://toucan.ly/#contact"','href="/contact.html"');
-if(!home.includes('Meet the studio'))home=home.replace('What we can create together <span aria-hidden="true">↓</span></a>','What we can create together <span aria-hidden="true">↓</span></a><br><a class="text-link dark-link" href="/about.html">Meet the studio <span aria-hidden="true">↗</span></a>');
-if(!home.includes('Explore all services'))home=home.replace('<div class="service-list">','<a class="text-link section-onward" href="/services.html">Explore all services <span aria-hidden="true">↗</span></a>\n      <div class="service-list">');
-if(!home.includes('Browse the work archive'))home=home.replace('<h3 class="more-work-label">','<a class="text-link section-onward" href="/work.html">Browse the work archive <span aria-hidden="true">↗</span></a><h3 class="more-work-label">');
+if(!home.includes('Meet the studio'))home=home.replace('What we can create together <span aria-hidden="true">↓</span></a>',`What we can create together <span aria-hidden="true">↓</span></a><br><a class="text-link dark-link" href="/about.html">Meet the studio ${arrow}</a>`);
+if(!home.includes('Explore all services'))home=home.replace('<div class="service-list">',`<a class="text-link section-onward" href="/services.html">Explore all services ${arrow}</a>\n      <div class="service-list">`);
+if(!home.includes('Browse the work archive'))home=home.replace('<h3 class="more-work-label">',`<a class="text-link section-onward" href="/work.html">Browse the work archive ${arrow}</a><h3 class="more-work-label">`);
 const selected=['septimus-consulting','vanex','msh-mkanah'].map(slug=>projects.find(p=>p.slug===slug));
-home=home.replace(/<section class="work-intro content-section" id="work"[\s\S]*?<\/section>/,`<section class="work-intro content-section" id="work" aria-labelledby="work-title"><div class="section-topline"><div class="section-heading"><p class="section-label">Selected work</p><h2 id="work-title">A few stories.<br>Many possibilities.</h2></div><a class="text-link" href="/work.html">View all our work ${arrow}</a></div><div class="home-selection">${selected.map(p=>`<a class="selected-project" href="${url(p)}"><div class="selected-project-art">${img(p.cover)}<span aria-hidden="true">↗</span></div><p>${esc(p.category)}</p><h3>${esc(p.title)}</h3></a>`).join('')}</div></section>`);
+home=home.replace(/<section class="work-intro content-section" id="work"[\s\S]*?<\/section>/,`<section class="work-intro content-section" id="work" aria-labelledby="work-title"><div class="section-topline"><div class="section-heading"><p class="section-label">Selected work</p><h2 id="work-title">A few stories.<br>Many possibilities.</h2></div><a class="text-link" href="/work.html">View all our work ${arrow}</a></div><div class="home-selection">${selected.map(p=>`<a class="selected-project" href="${url(p)}"><div class="selected-project-art">${img(p.cover)}${arrow}</div><p>${esc(p.category)}</p><h3>${esc(p.title)}</h3></a>`).join('')}</div></section>`);
+home=home.replace(/<span aria-hidden="true">↗(?:\uFE0E)?<\/span>/gu,arrow);
 await write('index.html',home);
 await writeFile(new URL('./page-routes.json',import.meta.url),JSON.stringify(['/','/about.html','/services.html','/work.html','/contact.html',...projects.map(url)],null,2)+'\n');
 console.log(`Built 15 inner pages; connected the home page.`);
