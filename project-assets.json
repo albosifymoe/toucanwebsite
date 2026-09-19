@@ -1,0 +1,1619 @@
+[
+  {
+    "slug": "septimus-consulting",
+    "title": "Septimus Consulting",
+    "source": "https://toucan.ly/2024/09/08/septimus-consulting/",
+    "cover": {
+      "src": "assets/portfolio/project-01.webp",
+      "width": 1024,
+      "height": 683,
+      "source": "https://toucan.ly/wp-content/uploads/2024/09/6-1024x683.jpg",
+      "originalSrc": "assets/project-01.jpg"
+    },
+    "gallery": [
+      {
+        "src": "assets/portfolio/1-2.webp",
+        "width": 1024,
+        "height": 751,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/1-2-1-1024x751.jpg",
+        "originalSrc": "assets/projects/1-2.jpg"
+      },
+      {
+        "src": "assets/portfolio/1-3.webp",
+        "width": 1024,
+        "height": 683,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/2-2-1024x683.jpg",
+        "originalSrc": "assets/projects/1-3.jpg"
+      },
+      {
+        "src": "assets/portfolio/1-4.webp",
+        "width": 1024,
+        "height": 683,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/3-2-1-1024x683.jpg",
+        "originalSrc": "assets/projects/1-4.jpg"
+      },
+      {
+        "src": "assets/portfolio/1-5.webp",
+        "width": 1024,
+        "height": 683,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/4-2-1024x683.jpg",
+        "originalSrc": "assets/projects/1-5.jpg"
+      },
+      {
+        "src": "assets/portfolio/1-6.webp",
+        "width": 1024,
+        "height": 683,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/5-3-1024x683.jpg",
+        "originalSrc": "assets/projects/1-6.jpg"
+      },
+      {
+        "src": "assets/portfolio/1-7.webp",
+        "width": 1024,
+        "height": 683,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/7-1024x683.jpg",
+        "originalSrc": "assets/projects/1-7.jpg"
+      },
+      {
+        "src": "assets/portfolio/1-8.webp",
+        "width": 1024,
+        "height": 683,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/8-1024x683.jpg",
+        "originalSrc": "assets/projects/1-8.jpg"
+      },
+      {
+        "src": "assets/portfolio/1-9.webp",
+        "width": 1024,
+        "height": 683,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/9-1024x683.jpg",
+        "originalSrc": "assets/projects/1-9.jpg"
+      },
+      {
+        "src": "assets/portfolio/1-10.webp",
+        "width": 1024,
+        "height": 683,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/10-1024x683.jpg",
+        "originalSrc": "assets/projects/1-10.jpg"
+      },
+      {
+        "src": "assets/portfolio/1-11.webp",
+        "width": 1024,
+        "height": 450,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Cover-Photo-1-1024x450.jpg",
+        "originalSrc": "assets/projects/1-11.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "hackathon",
+    "title": "Hackathon",
+    "source": "https://toucan.ly/2024/09/08/hackathon/",
+    "cover": {
+      "src": "assets/portfolio/project-02.webp",
+      "width": 1024,
+      "height": 1024,
+      "source": "https://toucan.ly/wp-content/uploads/2024/09/Layer-20-1024x1024.png",
+      "originalSrc": "assets/project-02.png"
+    },
+    "gallery": [
+      {
+        "src": "assets/portfolio/2-13.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/3-3-1024x1024.jpg",
+        "originalSrc": "assets/projects/2-13.jpg"
+      },
+      {
+        "src": "assets/portfolio/2-14.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/2-1-1024x1024.jpg",
+        "originalSrc": "assets/projects/2-14.jpg"
+      },
+      {
+        "src": "assets/portfolio/2-15.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/4-1-1024x1024.jpg",
+        "originalSrc": "assets/projects/2-15.jpg"
+      },
+      {
+        "src": "assets/portfolio/2-16.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/3-1024x1024.png",
+        "originalSrc": "assets/projects/2-16.png"
+      },
+      {
+        "src": "assets/portfolio/2-17.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/5-1-1024x1024.jpg",
+        "originalSrc": "assets/projects/2-17.jpg"
+      },
+      {
+        "src": "assets/portfolio/2-18.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/6-1024x1024.png",
+        "originalSrc": "assets/projects/2-18.png"
+      },
+      {
+        "src": "assets/portfolio/2-19.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/7-1024x1024.png",
+        "originalSrc": "assets/projects/2-19.png"
+      },
+      {
+        "src": "assets/portfolio/2-20.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/9-1024x1024.png",
+        "originalSrc": "assets/projects/2-20.png"
+      },
+      {
+        "src": "assets/portfolio/2-21.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/8-1024x1024.png",
+        "originalSrc": "assets/projects/2-21.png"
+      },
+      {
+        "src": "assets/portfolio/2-22.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/11-1024x1024.png",
+        "originalSrc": "assets/projects/2-22.png"
+      },
+      {
+        "src": "assets/portfolio/2-23.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/10-1024x1024.png",
+        "originalSrc": "assets/projects/2-23.png"
+      },
+      {
+        "src": "assets/portfolio/2-24.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/12-1024x1024.png",
+        "originalSrc": "assets/projects/2-24.png"
+      }
+    ]
+  },
+  {
+    "slug": "shake-up",
+    "title": "Shake Up",
+    "source": "https://toucan.ly/2024/09/06/shake-up/",
+    "cover": {
+      "src": "assets/portfolio/project-03.webp",
+      "width": 1024,
+      "height": 341,
+      "source": "https://toucan.ly/wp-content/uploads/2024/09/post-3-1024x341.jpg",
+      "originalSrc": "assets/project-03.jpg"
+    },
+    "gallery": [
+      {
+        "src": "assets/portfolio/3-26.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/دورها-1024x1024.jpg",
+        "originalSrc": "assets/projects/3-26.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-27.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/post-2-1024x1024.jpg",
+        "originalSrc": "assets/projects/3-27.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-28.webp",
+        "width": 1024,
+        "height": 852,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Post-1-1024x852.jpg",
+        "originalSrc": "assets/projects/3-28.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-29.webp",
+        "width": 1024,
+        "height": 864,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/دورها-2-1024x864.jpg",
+        "originalSrc": "assets/projects/3-29.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-30.webp",
+        "width": 1024,
+        "height": 864,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/post-2-1-1024x864.jpg",
+        "originalSrc": "assets/projects/3-30.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-31.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Post-3-1024x1024.png",
+        "originalSrc": "assets/projects/3-31.png"
+      },
+      {
+        "src": "assets/portfolio/3-32.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Post-4-1024x1024.jpg",
+        "originalSrc": "assets/projects/3-32.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-33.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Post-5-1024x1024.jpg",
+        "originalSrc": "assets/projects/3-33.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-34.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Post-1-1024x1024.png",
+        "originalSrc": "assets/projects/3-34.png"
+      },
+      {
+        "src": "assets/portfolio/3-35.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/1-1024x1024.jpg",
+        "originalSrc": "assets/projects/3-35.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-36.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/post-2-2-1024x1024.jpg",
+        "originalSrc": "assets/projects/3-36.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-37.webp",
+        "width": 1024,
+        "height": 987,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/post-1-1-1024x987.jpg",
+        "originalSrc": "assets/projects/3-37.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-38.webp",
+        "width": 1024,
+        "height": 389,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Eid-Cover-1024x389.jpg",
+        "originalSrc": "assets/projects/3-38.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-39.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Ramadan-profile-pic-1024x1024.jpg",
+        "originalSrc": "assets/projects/3-39.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-40.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/3-1024x1024.jpg",
+        "originalSrc": "assets/projects/3-40.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-41.webp",
+        "width": 1024,
+        "height": 389,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Ramadan-Cover-2-1024x389.jpg",
+        "originalSrc": "assets/projects/3-41.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-42.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/3-2-1024x1024.jpg",
+        "originalSrc": "assets/projects/3-42.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-43.webp",
+        "width": 1024,
+        "height": 688,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Layer-17-1024x688.jpg",
+        "originalSrc": "assets/projects/3-43.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-44.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/post-4-1-1024x1024.jpg",
+        "originalSrc": "assets/projects/3-44.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-45.webp",
+        "width": 1024,
+        "height": 996,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/post-1.1-1024x996.jpg",
+        "originalSrc": "assets/projects/3-45.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-46.webp",
+        "width": 512,
+        "height": 512,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/robot-1-1.jpg",
+        "originalSrc": "assets/projects/3-46.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-47.webp",
+        "width": 512,
+        "height": 512,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/robot-2-1.jpg",
+        "originalSrc": "assets/projects/3-47.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-48.webp",
+        "width": 512,
+        "height": 512,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/robot-3-1.jpg",
+        "originalSrc": "assets/projects/3-48.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-49.webp",
+        "width": 512,
+        "height": 512,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/robot-6.jpg",
+        "originalSrc": "assets/projects/3-49.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-50.webp",
+        "width": 512,
+        "height": 512,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/robot-4-1.jpg",
+        "originalSrc": "assets/projects/3-50.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-51.webp",
+        "width": 512,
+        "height": 512,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/robot-5.jpg",
+        "originalSrc": "assets/projects/3-51.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-52.webp",
+        "width": 512,
+        "height": 512,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/robot-8.jpg",
+        "originalSrc": "assets/projects/3-52.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-53.webp",
+        "width": 512,
+        "height": 512,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/robot-10.jpg",
+        "originalSrc": "assets/projects/3-53.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-54.webp",
+        "width": 512,
+        "height": 512,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/robot-7.jpg",
+        "originalSrc": "assets/projects/3-54.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-55.webp",
+        "width": 1024,
+        "height": 866,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Post-3-1-1024x866.jpg",
+        "originalSrc": "assets/projects/3-55.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-56.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/1-1-1024x1024.jpg",
+        "originalSrc": "assets/projects/3-56.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-57.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/2-1024x1024.jpg",
+        "originalSrc": "assets/projects/3-57.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-58.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/3-1-1024x1024.jpg",
+        "originalSrc": "assets/projects/3-58.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-59.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/4-1024x1024.jpg",
+        "originalSrc": "assets/projects/3-59.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-60.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/5-1024x1024.jpg",
+        "originalSrc": "assets/projects/3-60.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-61.webp",
+        "width": 1024,
+        "height": 389,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/cover-photo-1024x389.jpg",
+        "originalSrc": "assets/projects/3-61.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-62.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/post-1-2-1024x1024.jpg",
+        "originalSrc": "assets/projects/3-62.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-63.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/profile-pic-1024x1024.jpg",
+        "originalSrc": "assets/projects/3-63.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-64.webp",
+        "width": 575,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Post-3.3-1-575x1024.jpg",
+        "originalSrc": "assets/projects/3-64.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-65.webp",
+        "width": 575,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Post-2.2-1-575x1024.jpg",
+        "originalSrc": "assets/projects/3-65.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-66.webp",
+        "width": 575,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Post-1.1-2-575x1024.jpg",
+        "originalSrc": "assets/projects/3-66.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-67.webp",
+        "width": 1024,
+        "height": 429,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Display-3-1-1024x429.png",
+        "originalSrc": "assets/projects/3-67.png"
+      },
+      {
+        "src": "assets/portfolio/3-68.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Post-2-4-1024x1024.jpg",
+        "originalSrc": "assets/projects/3-68.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-69.webp",
+        "width": 1024,
+        "height": 683,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/shakeup-1p-1024x683.jpg",
+        "originalSrc": "assets/projects/3-69.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-70.webp",
+        "width": 1024,
+        "height": 713,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/1.2-1024x713.jpg",
+        "originalSrc": "assets/projects/3-70.jpg"
+      },
+      {
+        "src": "assets/portfolio/3-71.webp",
+        "width": 858,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/2.2-858x1024.jpg",
+        "originalSrc": "assets/projects/3-71.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "gorella-games",
+    "title": "Gorella Games",
+    "source": "https://toucan.ly/2024/09/06/gorella-games/",
+    "cover": {
+      "src": "assets/portfolio/project-04.webp",
+      "width": 1024,
+      "height": 574,
+      "source": "https://toucan.ly/wp-content/uploads/2024/09/cover2-1024x574.png",
+      "originalSrc": "assets/project-04.png"
+    },
+    "gallery": [
+      {
+        "src": "assets/portfolio/4-73.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/028-1024x1024.png",
+        "originalSrc": "assets/projects/4-73.png"
+      },
+      {
+        "src": "assets/portfolio/4-74.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/027-1024x1024.png",
+        "originalSrc": "assets/projects/4-74.png"
+      },
+      {
+        "src": "assets/portfolio/4-75.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/030-1024x1024.png",
+        "originalSrc": "assets/projects/4-75.png"
+      },
+      {
+        "src": "assets/portfolio/4-76.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/029-1024x1024.png",
+        "originalSrc": "assets/projects/4-76.png"
+      },
+      {
+        "src": "assets/portfolio/4-77.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/02-3-1024x1024.png",
+        "originalSrc": "assets/projects/4-77.png"
+      },
+      {
+        "src": "assets/portfolio/4-78.webp",
+        "width": 683,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Artboard-1-copy-4-2-683x1024.png",
+        "originalSrc": "assets/projects/4-78.png"
+      },
+      {
+        "src": "assets/portfolio/4-79.webp",
+        "width": 683,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Artboard-1-copy-5-2-683x1024.png",
+        "originalSrc": "assets/projects/4-79.png"
+      },
+      {
+        "src": "assets/portfolio/4-80.webp",
+        "width": 683,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Artboard-1-copy-2-1-683x1024.png",
+        "originalSrc": "assets/projects/4-80.png"
+      },
+      {
+        "src": "assets/portfolio/4-81.webp",
+        "width": 683,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Artboard-1-copy-1-683x1024.png",
+        "originalSrc": "assets/projects/4-81.png"
+      }
+    ]
+  },
+  {
+    "slug": "vanex",
+    "title": "Vanex",
+    "source": "https://toucan.ly/2024/09/06/vanex/",
+    "cover": {
+      "src": "assets/portfolio/project-05.webp",
+      "width": 1024,
+      "height": 1024,
+      "source": "https://toucan.ly/wp-content/uploads/2024/09/015-1-1-1024x1024.png",
+      "originalSrc": "assets/project-05.png"
+    },
+    "gallery": [
+      {
+        "src": "assets/portfolio/5-83.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Artboard-2-1-1024x1024.png",
+        "originalSrc": "assets/projects/5-83.png"
+      },
+      {
+        "src": "assets/portfolio/5-84.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/015-1-1024x1024.png",
+        "originalSrc": "assets/projects/5-84.png"
+      },
+      {
+        "src": "assets/portfolio/5-85.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/017-1-1024x1024.png",
+        "originalSrc": "assets/projects/5-85.png"
+      },
+      {
+        "src": "assets/portfolio/5-86.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/09-1024x1024.png",
+        "originalSrc": "assets/projects/5-86.png"
+      },
+      {
+        "src": "assets/portfolio/5-87.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/019-1-1-1024x1024.png",
+        "originalSrc": "assets/projects/5-87.png"
+      },
+      {
+        "src": "assets/portfolio/5-88.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/021-1-1024x1024.png",
+        "originalSrc": "assets/projects/5-88.png"
+      },
+      {
+        "src": "assets/portfolio/5-89.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/018-1024x1024.png",
+        "originalSrc": "assets/projects/5-89.png"
+      },
+      {
+        "src": "assets/portfolio/5-90.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/016-1024x1024.png",
+        "originalSrc": "assets/projects/5-90.png"
+      },
+      {
+        "src": "assets/portfolio/5-91.webp",
+        "width": 576,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/016-2-576x1024.png",
+        "originalSrc": "assets/projects/5-91.png"
+      },
+      {
+        "src": "assets/portfolio/5-92.webp",
+        "width": 576,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/015-2-576x1024.png",
+        "originalSrc": "assets/projects/5-92.png"
+      },
+      {
+        "src": "assets/portfolio/5-93.webp",
+        "width": 576,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/019-2-576x1024.png",
+        "originalSrc": "assets/projects/5-93.png"
+      },
+      {
+        "src": "assets/portfolio/5-94.webp",
+        "width": 1000,
+        "height": 1000,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/012.png",
+        "originalSrc": "assets/projects/5-94.png"
+      },
+      {
+        "src": "assets/portfolio/5-95.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/022.png",
+        "originalSrc": "assets/projects/5-95.png"
+      },
+      {
+        "src": "assets/portfolio/5-96.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/020-1-1024x1024.png",
+        "originalSrc": "assets/projects/5-96.png"
+      },
+      {
+        "src": "assets/portfolio/5-97.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/026-1024x1024.png",
+        "originalSrc": "assets/projects/5-97.png"
+      },
+      {
+        "src": "assets/portfolio/5-98.webp",
+        "width": 1000,
+        "height": 1000,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/011.png",
+        "originalSrc": "assets/projects/5-98.png"
+      },
+      {
+        "src": "assets/portfolio/5-99.webp",
+        "width": 1000,
+        "height": 1000,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/013.png",
+        "originalSrc": "assets/projects/5-99.png"
+      },
+      {
+        "src": "assets/portfolio/5-100.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Artboard-11-1024x1024.png",
+        "originalSrc": "assets/projects/5-100.png"
+      },
+      {
+        "src": "assets/portfolio/5-101.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Artboard-5-1-1024x1024.png",
+        "originalSrc": "assets/projects/5-101.png"
+      },
+      {
+        "src": "assets/portfolio/5-102.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Artboard-6-1024x1024.png",
+        "originalSrc": "assets/projects/5-102.png"
+      },
+      {
+        "src": "assets/portfolio/5-103.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Artboard-12-1-1024x1024.png",
+        "originalSrc": "assets/projects/5-103.png"
+      },
+      {
+        "src": "assets/portfolio/5-104.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Artboard-10-2-1-1024x1024.png",
+        "originalSrc": "assets/projects/5-104.png"
+      },
+      {
+        "src": "assets/portfolio/5-105.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/10.2-1024x1024.png",
+        "originalSrc": "assets/projects/5-105.png"
+      },
+      {
+        "src": "assets/portfolio/5-106.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/011-1-1024x1024.png",
+        "originalSrc": "assets/projects/5-106.png"
+      },
+      {
+        "src": "assets/portfolio/5-107.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/08-2-1024x1024.png",
+        "originalSrc": "assets/projects/5-107.png"
+      },
+      {
+        "src": "assets/portfolio/5-108.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/017-1024x1024.png",
+        "originalSrc": "assets/projects/5-108.png"
+      },
+      {
+        "src": "assets/portfolio/5-109.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/020-2-1024x1024.png",
+        "originalSrc": "assets/projects/5-109.png"
+      },
+      {
+        "src": "assets/portfolio/5-110.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/018-1-1024x1024.png",
+        "originalSrc": "assets/projects/5-110.png"
+      },
+      {
+        "src": "assets/portfolio/5-111.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/019-3-1024x1024.png",
+        "originalSrc": "assets/projects/5-111.png"
+      },
+      {
+        "src": "assets/portfolio/5-112.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/0015.png",
+        "originalSrc": "assets/projects/5-112.png"
+      },
+      {
+        "src": "assets/portfolio/5-113.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/021-1024x1024.png",
+        "originalSrc": "assets/projects/5-113.png"
+      },
+      {
+        "src": "assets/portfolio/5-114.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/022-1-1024x1024.png",
+        "originalSrc": "assets/projects/5-114.png"
+      },
+      {
+        "src": "assets/portfolio/5-115.webp",
+        "width": 1000,
+        "height": 1000,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/00comics.png",
+        "originalSrc": "assets/projects/5-115.png"
+      },
+      {
+        "src": "assets/portfolio/5-116.webp",
+        "width": 1000,
+        "height": 1000,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/02comics.png",
+        "originalSrc": "assets/projects/5-116.png"
+      },
+      {
+        "src": "assets/portfolio/5-117.webp",
+        "width": 1000,
+        "height": 1000,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/03comics.png",
+        "originalSrc": "assets/projects/5-117.png"
+      },
+      {
+        "src": "assets/portfolio/5-118.webp",
+        "width": 1000,
+        "height": 1000,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/04comics.png",
+        "originalSrc": "assets/projects/5-118.png"
+      },
+      {
+        "src": "assets/portfolio/5-119.webp",
+        "width": 1000,
+        "height": 1000,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/04-2comics.png",
+        "originalSrc": "assets/projects/5-119.png"
+      },
+      {
+        "src": "assets/portfolio/5-120.webp",
+        "width": 1000,
+        "height": 1000,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/05comics.png",
+        "originalSrc": "assets/projects/5-120.png"
+      },
+      {
+        "src": "assets/portfolio/5-121.webp",
+        "width": 1000,
+        "height": 1000,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/07comics.png",
+        "originalSrc": "assets/projects/5-121.png"
+      },
+      {
+        "src": "assets/portfolio/5-122.webp",
+        "width": 1000,
+        "height": 1000,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/06comics.png",
+        "originalSrc": "assets/projects/5-122.png"
+      }
+    ]
+  },
+  {
+    "slug": "tripoli-optic-group",
+    "title": "Tripoli Optic Group",
+    "source": "https://toucan.ly/2024/09/06/tripoli-optic-group/",
+    "cover": {
+      "src": "assets/portfolio/project-06.webp",
+      "width": 1024,
+      "height": 576,
+      "source": "https://toucan.ly/wp-content/uploads/2024/09/cover2024-1024x576.png",
+      "originalSrc": "assets/project-06.png"
+    },
+    "gallery": [
+      {
+        "src": "assets/portfolio/6-124.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Artboard-1-1024x1024.png",
+        "originalSrc": "assets/projects/6-124.png"
+      },
+      {
+        "src": "assets/portfolio/6-125.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Artboard-3-1024x1024.png",
+        "originalSrc": "assets/projects/6-125.png"
+      },
+      {
+        "src": "assets/portfolio/6-126.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/01-1024x1024.png",
+        "originalSrc": "assets/projects/6-126.png"
+      },
+      {
+        "src": "assets/portfolio/6-127.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Artboard-1-copy-12-1024x1024.png",
+        "originalSrc": "assets/projects/6-127.png"
+      },
+      {
+        "src": "assets/portfolio/6-128.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Artboard-1-copy-13-1024x1024.png",
+        "originalSrc": "assets/projects/6-128.png"
+      },
+      {
+        "src": "assets/portfolio/6-129.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Artboard-3_1-1024x1024.png",
+        "originalSrc": "assets/projects/6-129.png"
+      },
+      {
+        "src": "assets/portfolio/6-130.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Artboard-2-1024x1024.png",
+        "originalSrc": "assets/projects/6-130.png"
+      },
+      {
+        "src": "assets/portfolio/6-131.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/18-1024x1024.png",
+        "originalSrc": "assets/projects/6-131.png"
+      },
+      {
+        "src": "assets/portfolio/6-132.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/3123213-1024x1024.png",
+        "originalSrc": "assets/projects/6-132.png"
+      },
+      {
+        "src": "assets/portfolio/6-133.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/03-1024x1024.png",
+        "originalSrc": "assets/projects/6-133.png"
+      },
+      {
+        "src": "assets/portfolio/6-134.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/011-55-1024x1024.png",
+        "originalSrc": "assets/projects/6-134.png"
+      },
+      {
+        "src": "assets/portfolio/6-135.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/019-1-1024x1024.png",
+        "originalSrc": "assets/projects/6-135.png"
+      },
+      {
+        "src": "assets/portfolio/6-136.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Artboard-5-1024x1024.png",
+        "originalSrc": "assets/projects/6-136.png"
+      },
+      {
+        "src": "assets/portfolio/6-137.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/020-1024x1024.png",
+        "originalSrc": "assets/projects/6-137.png"
+      },
+      {
+        "src": "assets/portfolio/6-138.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Artboard-1-copy-3-1024x1024.png",
+        "originalSrc": "assets/projects/6-138.png"
+      },
+      {
+        "src": "assets/portfolio/6-139.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Artboard-1-copy-2-1024x1024.png",
+        "originalSrc": "assets/projects/6-139.png"
+      },
+      {
+        "src": "assets/portfolio/6-140.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Artboard-1-copy-4-1-1024x1024.png",
+        "originalSrc": "assets/projects/6-140.png"
+      },
+      {
+        "src": "assets/portfolio/6-141.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/09/Artboard-1-copy-5-1-1024x1024.png",
+        "originalSrc": "assets/projects/6-141.png"
+      }
+    ]
+  },
+  {
+    "slug": "numo-pay",
+    "title": "NUMO PAY",
+    "source": "https://toucan.ly/2024/08/27/numo-pay/",
+    "cover": {
+      "src": "assets/portfolio/7-142.webp",
+      "width": 1024,
+      "height": 576,
+      "source": "https://toucan.ly/wp-content/uploads/2024/08/Asset-2-1024x576.png",
+      "originalSrc": "assets/projects/7-142.png"
+    },
+    "gallery": [
+      {
+        "src": "assets/portfolio/7-143.webp",
+        "width": 1024,
+        "height": 576,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Asset-7-1024x576.png",
+        "originalSrc": "assets/projects/7-143.png"
+      },
+      {
+        "src": "assets/portfolio/7-144.webp",
+        "width": 674,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Asset-4-674x1024.png",
+        "originalSrc": "assets/projects/7-144.png"
+      },
+      {
+        "src": "assets/portfolio/7-145.webp",
+        "width": 1024,
+        "height": 914,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Asset-3-1024x914.png",
+        "originalSrc": "assets/projects/7-145.png"
+      },
+      {
+        "src": "assets/portfolio/7-146.webp",
+        "width": 1024,
+        "height": 576,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Asset-5-1024x576.png",
+        "originalSrc": "assets/projects/7-146.png"
+      },
+      {
+        "src": "assets/portfolio/7-147.webp",
+        "width": 1024,
+        "height": 576,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/123-1024x576.png",
+        "originalSrc": "assets/projects/7-147.png"
+      },
+      {
+        "src": "assets/portfolio/7-148.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Artboard-3-1-1024x1024.png",
+        "originalSrc": "assets/projects/7-148.png"
+      },
+      {
+        "src": "assets/portfolio/7-149.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Artboard-1-1024x1024.png",
+        "originalSrc": "assets/projects/7-149.png"
+      },
+      {
+        "src": "assets/portfolio/7-150.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Artboard-2-1-1024x1024.png",
+        "originalSrc": "assets/projects/7-150.png"
+      },
+      {
+        "src": "assets/portfolio/7-151.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Artboard-4-2-1024x1024.png",
+        "originalSrc": "assets/projects/7-151.png"
+      },
+      {
+        "src": "assets/portfolio/7-152.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Artboard-6-1-1024x1024.png",
+        "originalSrc": "assets/projects/7-152.png"
+      },
+      {
+        "src": "assets/portfolio/7-153.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Artboard-5-1-1024x1024.png",
+        "originalSrc": "assets/projects/7-153.png"
+      },
+      {
+        "src": "assets/portfolio/7-154.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Artboard-7-1024x1024.png",
+        "originalSrc": "assets/projects/7-154.png"
+      },
+      {
+        "src": "assets/portfolio/7-155.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Artboard-9-1-1024x1024.png",
+        "originalSrc": "assets/projects/7-155.png"
+      },
+      {
+        "src": "assets/portfolio/7-156.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Artboard-8-1-1024x1024.png",
+        "originalSrc": "assets/projects/7-156.png"
+      },
+      {
+        "src": "assets/portfolio/7-157.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Artboard-12-1024x1024.png",
+        "originalSrc": "assets/projects/7-157.png"
+      },
+      {
+        "src": "assets/portfolio/7-158.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Artboard-10-1-1024x1024.png",
+        "originalSrc": "assets/projects/7-158.png"
+      },
+      {
+        "src": "assets/portfolio/7-159.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Artboard-11-1024x1024.png",
+        "originalSrc": "assets/projects/7-159.png"
+      },
+      {
+        "src": "assets/portfolio/7-160.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Artboard-15-1024x1024.png",
+        "originalSrc": "assets/projects/7-160.png"
+      },
+      {
+        "src": "assets/portfolio/7-161.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Artboard-13-1024x1024.png",
+        "originalSrc": "assets/projects/7-161.png"
+      },
+      {
+        "src": "assets/portfolio/7-162.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Artboard-14-1024x1024.png",
+        "originalSrc": "assets/projects/7-162.png"
+      }
+    ]
+  },
+  {
+    "slug": "fornello",
+    "title": "Fornello",
+    "source": "https://toucan.ly/2024/08/26/fornello/",
+    "cover": {
+      "src": "assets/portfolio/8-163.webp",
+      "width": 1024,
+      "height": 1024,
+      "source": "https://toucan.ly/wp-content/uploads/2024/08/Group-23-1024x1024.jpg",
+      "originalSrc": "assets/projects/8-163.jpg"
+    },
+    "gallery": [
+      {
+        "src": "assets/portfolio/8-164.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Group-12-1024x1024.jpg",
+        "originalSrc": "assets/projects/8-164.jpg"
+      },
+      {
+        "src": "assets/portfolio/8-165.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Group-15-1024x1024.jpg",
+        "originalSrc": "assets/projects/8-165.jpg"
+      },
+      {
+        "src": "assets/portfolio/8-166.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Group-14-1024x1024.jpg",
+        "originalSrc": "assets/projects/8-166.jpg"
+      },
+      {
+        "src": "assets/portfolio/8-167.webp",
+        "width": 1131,
+        "height": 1600,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Asset-4@4x.png",
+        "originalSrc": "assets/projects/8-167.png"
+      },
+      {
+        "src": "assets/portfolio/8-168.webp",
+        "width": 724,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Asset-2@4x-724x1024.png",
+        "originalSrc": "assets/projects/8-168.png"
+      },
+      {
+        "src": "assets/portfolio/8-169.webp",
+        "width": 724,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Asset-3@4x-724x1024.png",
+        "originalSrc": "assets/projects/8-169.png"
+      }
+    ]
+  },
+  {
+    "slug": "biscotti",
+    "title": "Biscotti",
+    "source": "https://toucan.ly/2024/08/25/biscotti/",
+    "cover": {
+      "src": "assets/portfolio/9-170.webp",
+      "width": 1024,
+      "height": 1024,
+      "source": "https://toucan.ly/wp-content/uploads/2024/08/Artboard-3-1024x1024.png",
+      "originalSrc": "assets/projects/9-170.png"
+    },
+    "gallery": [
+      {
+        "src": "assets/portfolio/9-171.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Artboard-5-1024x1024.png",
+        "originalSrc": "assets/projects/9-171.png"
+      },
+      {
+        "src": "assets/portfolio/9-172.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Artboard-4-1024x1024.png",
+        "originalSrc": "assets/projects/9-172.png"
+      },
+      {
+        "src": "assets/portfolio/9-173.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Artboard-6-1024x1024.png",
+        "originalSrc": "assets/projects/9-173.png"
+      },
+      {
+        "src": "assets/portfolio/9-174.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Artboard-8-1024x1024.png",
+        "originalSrc": "assets/projects/9-174.png"
+      },
+      {
+        "src": "assets/portfolio/9-175.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Artboard-9-1024x1024.png",
+        "originalSrc": "assets/projects/9-175.png"
+      },
+      {
+        "src": "assets/portfolio/9-176.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Artboard-10-1024x1024.png",
+        "originalSrc": "assets/projects/9-176.png"
+      },
+      {
+        "src": "assets/portfolio/9-177.webp",
+        "width": 819,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/DSC08684-819x1024.jpg",
+        "originalSrc": "assets/projects/9-177.jpg"
+      },
+      {
+        "src": "assets/portfolio/9-178.webp",
+        "width": 819,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/DSC08698-819x1024.jpg",
+        "originalSrc": "assets/projects/9-178.jpg"
+      },
+      {
+        "src": "assets/portfolio/9-179.webp",
+        "width": 819,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/DSC08715-819x1024.jpg",
+        "originalSrc": "assets/projects/9-179.jpg"
+      },
+      {
+        "src": "assets/portfolio/9-180.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/007-1024x1024.png",
+        "originalSrc": "assets/projects/9-180.png"
+      },
+      {
+        "src": "assets/portfolio/9-181.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/017-1024x1024.png",
+        "originalSrc": "assets/projects/9-181.png"
+      },
+      {
+        "src": "assets/portfolio/9-182.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/09-1-1024x1024.png",
+        "originalSrc": "assets/projects/9-182.png"
+      },
+      {
+        "src": "assets/portfolio/9-183.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/017-2-1024x1024.png",
+        "originalSrc": "assets/projects/9-183.png"
+      },
+      {
+        "src": "assets/portfolio/9-184.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Artboard-2-1024x1024.png",
+        "originalSrc": "assets/projects/9-184.png"
+      },
+      {
+        "src": "assets/portfolio/9-185.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Artboard-1-copy-1024x1024.png",
+        "originalSrc": "assets/projects/9-185.png"
+      },
+      {
+        "src": "assets/portfolio/9-186.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Artboard-4-1-1024x1024.png",
+        "originalSrc": "assets/projects/9-186.png"
+      }
+    ]
+  },
+  {
+    "slug": "msh-mkanah",
+    "title": "Msh Mkanah",
+    "source": "https://toucan.ly/2024/08/04/msh-mkanah/",
+    "cover": {
+      "src": "assets/portfolio/10-187.webp",
+      "width": 1024,
+      "height": 683,
+      "source": "https://toucan.ly/wp-content/uploads/2024/08/5-1024x683.jpg",
+      "originalSrc": "assets/projects/10-187.jpg"
+    },
+    "gallery": [
+      {
+        "src": "assets/portfolio/10-188.webp",
+        "width": 1024,
+        "height": 683,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/1-1024x683.jpg",
+        "originalSrc": "assets/projects/10-188.jpg"
+      },
+      {
+        "src": "assets/portfolio/10-189.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/2.2-1-1024x1024.jpg",
+        "originalSrc": "assets/projects/10-189.jpg"
+      },
+      {
+        "src": "assets/portfolio/10-190.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/1.1-1-1024x1024.jpg",
+        "originalSrc": "assets/projects/10-190.jpg"
+      },
+      {
+        "src": "assets/portfolio/10-191.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/3-1-1024x1024.jpg",
+        "originalSrc": "assets/projects/10-191.jpg"
+      },
+      {
+        "src": "assets/portfolio/10-192.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/مش-مكانها-5-1-2-1024x1024.jpg",
+        "originalSrc": "assets/projects/10-192.jpg"
+      },
+      {
+        "src": "assets/portfolio/10-193.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/مش-مكانها-5-1-1-1024x1024.jpg",
+        "originalSrc": "assets/projects/10-193.jpg"
+      },
+      {
+        "src": "assets/portfolio/10-194.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/مش-مكانها-4-2-1024x1024.jpg",
+        "originalSrc": "assets/projects/10-194.jpg"
+      },
+      {
+        "src": "assets/portfolio/10-195.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/مش-مكانها-4-1-1024x1024.jpg",
+        "originalSrc": "assets/projects/10-195.jpg"
+      },
+      {
+        "src": "assets/portfolio/10-196.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/مش-مكانها-11-1-1024x1024.jpg",
+        "originalSrc": "assets/projects/10-196.jpg"
+      },
+      {
+        "src": "assets/portfolio/10-197.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/مش-مكانها-11-2-1024x1024.jpg",
+        "originalSrc": "assets/projects/10-197.jpg"
+      },
+      {
+        "src": "assets/portfolio/10-198.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/مش-مكانها-10-2-1024x1024.jpg",
+        "originalSrc": "assets/projects/10-198.jpg"
+      },
+      {
+        "src": "assets/portfolio/10-199.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/مش-مكانها-10-1-1024x1024.jpg",
+        "originalSrc": "assets/projects/10-199.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "16-days-of-activism",
+    "title": "16 Days of activism",
+    "source": "https://toucan.ly/2024/08/04/16-days-of-activism/",
+    "cover": {
+      "src": "assets/portfolio/11-200.webp",
+      "width": 1024,
+      "height": 819,
+      "source": "https://toucan.ly/wp-content/uploads/2024/08/1-1-1024x819.png",
+      "originalSrc": "assets/projects/11-200.png"
+    },
+    "gallery": [
+      {
+        "src": "assets/portfolio/11-201.webp",
+        "width": 1024,
+        "height": 683,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Layer-0-1024x683.png",
+        "originalSrc": "assets/projects/11-201.png"
+      },
+      {
+        "src": "assets/portfolio/11-202.webp",
+        "width": 1024,
+        "height": 683,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/DSC03585-1024x683.png",
+        "originalSrc": "assets/projects/11-202.png"
+      },
+      {
+        "src": "assets/portfolio/11-203.webp",
+        "width": 1024,
+        "height": 683,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/DSC03606-1024x683.png",
+        "originalSrc": "assets/projects/11-203.png"
+      },
+      {
+        "src": "assets/portfolio/11-204.webp",
+        "width": 1024,
+        "height": 762,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/DSC03639-1024x762.png",
+        "originalSrc": "assets/projects/11-204.png"
+      },
+      {
+        "src": "assets/portfolio/11-205.webp",
+        "width": 1024,
+        "height": 662,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/DSC03538-1024x662.png",
+        "originalSrc": "assets/projects/11-205.png"
+      },
+      {
+        "src": "assets/portfolio/11-206.webp",
+        "width": 1024,
+        "height": 686,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/DSC03615-Recovered-1024x686.png",
+        "originalSrc": "assets/projects/11-206.png"
+      },
+      {
+        "src": "assets/portfolio/11-207.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/post-1024x1024.jpg",
+        "originalSrc": "assets/projects/11-207.jpg"
+      },
+      {
+        "src": "assets/portfolio/11-208.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Post-1-3-1024x1024.jpeg",
+        "originalSrc": "assets/projects/11-208.jpeg"
+      },
+      {
+        "src": "assets/portfolio/11-209.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Post-1-1024x1024.jpg",
+        "originalSrc": "assets/projects/11-209.jpg"
+      },
+      {
+        "src": "assets/portfolio/11-210.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Post-1-1-1024x1024.jpeg",
+        "originalSrc": "assets/projects/11-210.jpeg"
+      },
+      {
+        "src": "assets/portfolio/11-211.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Post-1-1024x1024.jpeg",
+        "originalSrc": "assets/projects/11-211.jpeg"
+      },
+      {
+        "src": "assets/portfolio/11-212.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Family--1024x1024.jpg",
+        "originalSrc": "assets/projects/11-212.jpg"
+      },
+      {
+        "src": "assets/portfolio/11-213.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Children--1024x1024.jpg",
+        "originalSrc": "assets/projects/11-213.jpg"
+      },
+      {
+        "src": "assets/portfolio/11-214.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Stop-studying--1024x1024.jpg",
+        "originalSrc": "assets/projects/11-214.jpg"
+      },
+      {
+        "src": "assets/portfolio/11-215.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/post-1-1-1024x1024.jpg",
+        "originalSrc": "assets/projects/11-215.jpg"
+      },
+      {
+        "src": "assets/portfolio/11-216.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/IMG_6223-1024x1024.jpg",
+        "originalSrc": "assets/projects/11-216.jpg"
+      },
+      {
+        "src": "assets/portfolio/11-217.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Post-2-1-1024x1024.jpg",
+        "originalSrc": "assets/projects/11-217.jpg"
+      },
+      {
+        "src": "assets/portfolio/11-218.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/post-2-2-1024x1024.jpg",
+        "originalSrc": "assets/projects/11-218.jpg"
+      },
+      {
+        "src": "assets/portfolio/11-219.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Post-2-3-1024x1024.jpg",
+        "originalSrc": "assets/projects/11-219.jpg"
+      },
+      {
+        "src": "assets/portfolio/11-220.webp",
+        "width": 1024,
+        "height": 1024,
+        "source": "https://toucan.ly/wp-content/uploads/2024/08/Post-2-4-1024x1024.jpg",
+        "originalSrc": "assets/projects/11-220.jpg"
+      }
+    ]
+  }
+]

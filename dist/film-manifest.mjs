@@ -31,5 +31,10 @@ const media={
     }
   ]
 };
-const passage=(number,family)=>hosted?media[family][number-1]:({standard:`assets/pass-0${number}-${family}-2k.mp4`,high:`assets/pass-0${number}-${family}-4k.mp4`});
+const passage=(number,family)=>{
+  // Local editorial repair: extended leaf occlusion removes the generated
+  // bare-rope/banner pop. Ship these files with every deployment.
+  if(number===2&&family==='portrait')return {standard:'assets/pass-02-portrait-repaired-2k.mp4',high:'assets/pass-02-portrait-repaired-4k.mp4'};
+  return hosted?media[family][number-1]:{standard:`assets/pass-0${number}-${family}-2k.mp4`,high:`assets/pass-0${number}-${family}-4k.mp4`};
+};
 export const films={landscape:[1,2,3].map(n=>passage(n,'landscape')),portrait:[1,2,3].map(n=>passage(n,'portrait'))};

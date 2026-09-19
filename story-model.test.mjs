@@ -1,26 +1,23 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {storyFrame,settleTarget} from './dist/story-model.mjs';
-test('arrival and exit are complete readable scenes',()=>{
-  assert.deepEqual(storyFrame(0),{from:0,to:1,blend:0,active:0,settled:true});
-  assert.deepEqual(storyFrame(3),{from:3,to:3,blend:0,active:3,settled:true});
-  assert.equal(storyFrame(-2).active,0);assert.equal(storyFrame(9).active,3);
+import {storyFrame,timeline,STORY_LENGTH,chapterPositions} from './dist/story-model.mjs';
+test('each chapter destination is a settled reading state',()=>{
+  chapterPositions.forEach((position,scene)=>{assert.equal(storyFrame(position).settled,true);assert.equal(storyFrame(position).scene,scene);});
+  assert.equal(storyFrame(-1).scene,0);assert.equal(storyFrame(STORY_LENGTH+1).scene,3);
 });
-test('each chapter has a hold and each passage only mixes its neighbours',()=>{
-  for(let chapter=0;chapter<3;chapter++){
-    assert.equal(storyFrame(chapter+.2).blend,0);
-    assert.equal(storyFrame(chapter+.8).blend,1);
-    const mid=storyFrame(chapter+.5);assert.equal(mid.from,chapter);assert.equal(mid.to,chapter+1);assert.ok(Math.abs(mid.blend-.5)<1e-9);
+test('action gets two viewports with linear, reversible time and exact endpoints',()=>{
+  for(const span of timeline.filter(s=>s.kind==='motion')){
+    assert.equal(span.length,2);
+    for(const fraction of [0,.1,.25,.5,.75,.9]){
+      const frame=storyFrame(span.start+span.length*fraction);
+      assert.equal(frame.passage,span.passage);assert.ok(Math.abs(frame.amount-fraction)<1e-9);
+    }
+    assert.equal(storyFrame(span.end).scene,span.passage+1);
   }
 });
-test('reverse scrolling retraces the same visual state',()=>{
-  const forward=Array.from({length:301},(_,i)=>storyFrame(i/100));
-  const reverse=Array.from({length:301},(_,i)=>storyFrame((300-i)/100)).reverse();
-  assert.deepEqual(forward,reverse);
-  for(const frame of forward){assert.ok(frame.blend>=0&&frame.blend<=1);assert.ok(frame.active>=0&&frame.active<4);}
-});
-test('settling follows intent only inside a transition and never traps exit',()=>{
-  assert.equal(settleTarget(.5,1),1);assert.equal(settleTarget(1.5,-1),1);
-  for(const p of [-1,0,.2,.8,1,2.2,2.8,3,4])assert.equal(settleTarget(p,1),null);
-  assert.equal(settleTarget(.5,0),null);
+test('repeating a stopped scroll position never advances the story',()=>{
+  for(const span of timeline.filter(s=>s.kind==='motion')){
+    const p=span.start+span.length*.47,initial=storyFrame(p);
+    for(let i=0;i<300;i++)assert.deepEqual(storyFrame(p),initial);
+  }
 });
