@@ -1,0 +1,23 @@
+# Staging only. Do not install this file on the production domain.
+Options -Indexes -ExecCGI
+DirectoryIndex index.html
+AddType text/javascript .mjs
+
+RewriteEngine On
+# Leave domain-control validation available for automatic certificate renewal.
+RewriteRule ^\.well-known/(acme-challenge|pki-validation)/ - [L]
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://staging.toucan.ly%{REQUEST_URI} [R=302,L]
+
+<FilesMatch "(^\.|\.(php[0-9]*|phtml|phar|cgi|pl|py|sh|sql|bak|log|ini|ya?ml|pem|key)$)">
+  Require all denied
+</FilesMatch>
+
+<IfModule mod_headers.c>
+  Header always set X-Robots-Tag "noindex, nofollow, noarchive"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "DENY"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; media-src 'self' https://d2ol7oe51mr4n9.cloudfront.net; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'none'; upgrade-insecure-requests"
+</IfModule>

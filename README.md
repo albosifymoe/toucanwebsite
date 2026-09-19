@@ -10,7 +10,9 @@ This is the current staging version, not a production release. Pages retain `noi
 
 The `planning/` and `production/` paths referenced below belong to the original parent workspace and are not included in this repository. A standalone clone includes the generated pages and browser images, but the local preview's five unchanged animation passages require the original `../production/browser-delivery/` files. Hosted previews use the external video URLs instead. The import/optimization utilities also rely on the parent workspace; they are not needed to deploy `dist/`.
 
-No automatic deployment is configured. cPanel deployment should first target a separate staging document root once the hosting path and Git access are confirmed.
+The cPanel deployment configuration targets **staging only** at `/home/toucanly/staging.toucan.ly`. In cPanel Git Version Control, use **Update from Remote**, then **Deploy HEAD Commit**. Pushing to GitHub alone does not deploy. The script checks the target, rejects symlinks, keeps a timestamped archive of an existing staging site in `/home/toucanly/deployment-backups/`, and copies only `dist/` plus the staging server rules. It never deletes files or modifies `/home/toucanly/public_html`.
+
+The staging server rules require HTTPS, disable directory listings, deny access to hidden/server files, prevent framing, and restrict resource origins with a Content Security Policy. Staging is publicly accessible and marked `noindex`; this is not password protection. Do not place private content there. The GitHub repository is also public. A trusted certificate and the actual response headers must be verified on the host after deployment.
 
 ## Design
 
