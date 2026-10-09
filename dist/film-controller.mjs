@@ -12,9 +12,9 @@ export class ScrollFilm {
     entry.disposed=true;entry.video.pause();entry.video.removeAttribute('src');entry.video.load();entry.video.remove();this.entries.delete(entry.url);
     if(this.presented===entry)this.clearPresentation();
   }
-  entryFor(url,index){
+  entryFor(url,index,preserve=null){
     if(this.entries.has(url))return this.entries.get(url);
-    if(this.entries.size>=2){const spare=[...this.entries.values()].find(entry=>entry!==this.presented);if(spare)this.dispose(spare);}
+    if(this.entries.size>=2){const spare=[...this.entries.values()].find(entry=>entry!==this.presented&&entry!==preserve);if(spare)this.dispose(spare);}
     const video=document.createElement('video');video.muted=true;video.defaultMuted=true;video.playsInline=true;video.preload='auto';video.tabIndex=-1;video.setAttribute('aria-hidden','true');video.hidden=true;
     const entry={url,index,video,failed:false,decoded:false,decodedTime:0,amount:0,target:0,disposed:false};
     this.entries.set(url,entry);this.layer.append(video);
@@ -40,7 +40,7 @@ export class ScrollFilm {
     }
   }
   present(entry){
-    if(entry.disposed||entry.failed||!this.enabled||this.active!==entry)return;
+    if(entry.disposed||entry.failed||!this.enabled||this.active!==entry||this.holdingStill)return;
     for(const item of this.entries.values())item.video.hidden=item!==entry;
     this.presented=entry;this.stage.classList.add('has-film');
   }
@@ -51,13 +51,19 @@ export class ScrollFilm {
   }
   clearPresentation(){this.stage.classList.remove('has-film');for(const entry of this.entries.values())entry.video.hidden=true;this.presented=null;}
   update(state,enabled,direction=1){
-    const family=this.portrait.matches?'portrait':'landscape',ratio=family==='portrait'?9/16:16/9;
-    const drawnWidth=Math.max(innerWidth,innerHeight*ratio),drawnHeight=drawnWidth/ratio;
-    const tier=Math.max(drawnWidth,drawnHeight)*(globalThis.devicePixelRatio||1)>2304?'high':'standard';
-    const urlFor=index=>{const spec=this.manifest[family]?.[index];return typeof spec==='string'?spec:spec?.[tier];};
+    const family=this.portrait.matches?'portrait':'landscape';
+    // Interactive seeking has a frame-time budget. High-DPI screens get the
+    // original 4K illustrations at reading stops, not a second 4K video decoder.
+    const urlFor=index=>{const spec=this.manifest[family]?.[index];return typeof spec==='string'?spec:spec?.standard;};
     if(!enabled||globalThis.navigator?.connection?.saveData){this.disable();return {active:false,atTarget:false,sceneReady:true,failed:false};}
     if(this.family!==family){this.disable();this.family=family;}this.enabled=true;
+    this.holdingStill=state.settled&&state.stillReady;
     let index=state.passage,amount=state.amount;
+    if(this.holdingStill){
+      this.clearPresentation();
+      index=Math.max(0,Math.min(2,state.scene-(direction<0?1:0)));
+      amount=state.scene>index?1:0;
+    }
     // Retain either matching endpoint at a reading stop, avoiding an unnecessary swap.
     if(state.settled&&this.presented){
       if(this.presented.index===state.scene){index=state.scene;amount=0;}
@@ -69,15 +75,15 @@ export class ScrollFilm {
     if(entry.failed){this.clearPresentation();return {active:false,atTarget:false,sceneReady:true,failed:true};}
     if(entry.decoded&&close(entry.decodedTime,entry.target))this.present(entry);
     const atTarget=entry.decoded&&!entry.video.seeking&&close(entry.decodedTime,entry.target),shown=this.presented;
-    const sceneReady=Boolean(shown&&state.settled&&((shown.index===state.scene&&close(shown.decodedTime,0))||(shown.index+1===state.scene&&Number.isFinite(shown.video.duration)&&close(shown.decodedTime,shown.video.duration-FRAME))));
+    const sceneReady=Boolean(this.holdingStill||(shown&&state.settled&&((shown.index===state.scene&&close(shown.decodedTime,0))||(shown.index+1===state.scene&&Number.isFinite(shown.video.duration)&&close(shown.decodedTime,shown.video.duration-FRAME)))));
     this.seek(entry);
     // Prepare a real neighbour without evicting an outgoing frame during handoff.
-    if(this.presented===entry){
+    if(this.presented===entry||this.holdingStill){
       let neighbour=index+(direction<0?-1:1);
       if(state.settled&&direction>=0&&state.scene<3&&index===state.scene-1)neighbour=state.scene;
       if(state.settled&&direction<0&&state.scene>0&&index===state.scene)neighbour=state.scene-1;
       const neighbourUrl=urlFor(neighbour);
-      if(neighbourUrl&&neighbour!==index){const next=this.entryFor(neighbourUrl,neighbour);next.amount=neighbour<index?1:0;this.setTarget(next);this.seek(next);}
+      if(neighbourUrl&&neighbour!==index){const next=this.entryFor(neighbourUrl,neighbour,entry);next.amount=neighbour<index?1:0;this.setTarget(next);this.seek(next);}
     }
     return {active:Boolean(this.presented),atTarget,sceneReady,failed:false};
   }

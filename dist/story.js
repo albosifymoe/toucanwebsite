@@ -6,7 +6,7 @@ const scenes=[...document.querySelectorAll('.scene')],controls=document.querySel
 const chapterLinks=[...document.querySelectorAll('.chapter-links a')],toggle=document.querySelector('.motion-toggle');
 const reduce=matchMedia('(prefers-reduced-motion: reduce)'),film=new ScrollFilm(stage,films,()=>requestRender());
 const coarse=matchMedia('(pointer: coarse)'),mobile=matchMedia('(max-width: 900px), (pointer: coarse)');
-let motion=false,paused=false,top=0,distance=1,progress=0,lastY=scrollY,direction=1,frameRequest=0,animation=0,jumpTimer=0;
+let motion=false,paused=false,top=0,distance=1,progress=0,lastY=scrollY,direction=1,frameRequest=0,animation=0,jumpTimer=0,lastVisual='';
 const supportsMotion=()=>supportsStoryMotion(reduce.matches,innerWidth,innerHeight,coarse.matches);
 const measure=()=>{top=story.getBoundingClientRect().top+scrollY;distance=Math.max(1,story.offsetHeight-innerHeight);};
 const position=()=>clamp((scrollY-top)/distance*STORY_LENGTH,0,STORY_LENGTH),yFor=unit=>top+unit/STORY_LENGTH*distance;
@@ -18,7 +18,13 @@ function animateTo(destination,duration=520,finish,linear=false){
 }
 function render(){
   frameRequest=0;if(!motion)return;
-  progress=position();const state=storyFrame(progress),filmState=film.update(state,true,direction),readable=filmState.failed||(state.settled&&(filmState.sceneReady||!filmState.active));
+  progress=position();const state=storyFrame(progress),still=scenes[state.active].querySelector('img');
+  state.stillReady=still.complete&&still.naturalWidth>0;
+  const filmState=film.update(state,true,direction),readable=filmState.failed||(state.settled&&(filmState.sceneReady||!filmState.active));
+  // Video seeking changes every frame; chapter layout and copy usually do not.
+  const visual=`${state.active}:${readable}`;
+  if(visual===lastVisual)return;
+  lastVisual=visual;
   scenes.forEach((scene,index)=>{
     const active=index===state.active,showCopy=active&&readable;
     scene.classList.toggle('is-current',active);scene.classList.remove('is-transitioning');scene.style.opacity=active?'1':'0';scene.style.zIndex='1';
@@ -30,9 +36,10 @@ function render(){
   controls.querySelector('.scroll-cue').firstChild.textContent=state.active===3?'Keep exploring ':'Scroll to explore ';
 }
 function requestRender(){if(!frameRequest)frameRequest=requestAnimationFrame(render);}
+scenes.forEach(scene=>scene.querySelector('img').addEventListener('load',requestRender));
 function setMode(){
   const previous=motion,oldPosition=progress,wasInStory=scrollY>=top&&scrollY<=top+distance;
-  motion=supportsMotion()&&!paused;cancelMovement();root.classList.toggle('is-motion',motion);root.classList.toggle('is-static',paused&&!reduce.matches);
+  motion=supportsMotion()&&!paused;lastVisual='';cancelMovement();root.classList.toggle('is-motion',motion);root.classList.toggle('is-static',paused&&!reduce.matches);
   story.style.setProperty('--story-height',`${(STORY_LENGTH+1)*100}svh`);
   controls.hidden=mobile.matches||(!motion&&!paused);toggle.textContent=paused?'Resume motion':'Pause motion';toggle.setAttribute('aria-pressed',String(paused));
   if(!motion){film.disable();scenes.forEach(scene=>{scene.removeAttribute('aria-hidden');scene.inert=false;scene.style.opacity='';scene.style.zIndex='';scene.querySelector('.scene-art').style.transform='';scene.querySelector('.scene-copy').style.opacity='';scene.querySelector('.scene-copy').style.transform='';});}

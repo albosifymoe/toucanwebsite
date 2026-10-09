@@ -63,7 +63,51 @@ test('media errors reveal the still fallback; missing portrait never substitutes
   assert.equal(film.update(frame(0),true).failed,true);assert.equal(stage.classList.contains('has-film'),false);
   orientation.matches=true;assert.equal(film.update(frame(.5),true).active,false);
 });
-test('high-density delivery selects the native 4K movie',()=>{
+test('high-density displays keep the lighter video for interactive seeking',()=>{
   const {film}=setup({landscape:[{standard:'2k.mp4',high:'4k.mp4'}]});film.update(frame(0),true);assert.equal(film.active.url,'2k.mp4');
-  globalThis.devicePixelRatio=2;film.update(frame(0),true);assert.equal(film.active.url,'4k.mp4');
+  globalThis.devicePixelRatio=2;film.update(frame(0),true);assert.equal(film.active.url,'2k.mp4');
+});
+
+test('a loaded reading still replaces the compressed movie and late seeks cannot cover it',()=>{
+  const {film,stage}=setup({landscape:['one.mp4','two.mp4','three.mp4']});
+  film.update(frame(.9),true);const outgoing=film.active;outgoing.video.loaded();outgoing.video.finishSeek();
+  assert.equal(stage.classList.contains('has-film'),true);
+  const hold={settled:true,scene:1,passage:1,amount:0,stillReady:true};
+  assert.equal(film.update(hold,true).sceneReady,true);
+  assert.equal(stage.classList.contains('has-film'),false);
+  film.active.video.loaded();film.active.video.finishSeek();
+  assert.equal(stage.classList.contains('has-film'),false,'late callbacks must leave the original still visible');
+  film.update(frame(.15,1),true);film.active.video.finishSeek();
+  assert.equal(stage.classList.contains('has-film'),true,'motion resumes when leaving the hold');
+  assert.ok(film.entries.size<=2);
+});
+
+test('an unloaded reading still keeps a decoded film visible until the image is ready',()=>{
+  const {film,stage}=setup({landscape:['one.mp4','two.mp4']});
+  film.update(frame(1),true);film.active.video.loaded();film.active.video.finishSeek();
+  const hold={settled:true,scene:1,passage:1,amount:0,stillReady:false};
+  film.update(hold,true);assert.equal(stage.classList.contains('has-film'),true);
+  film.update({...hold,stillReady:true},true);assert.equal(stage.classList.contains('has-film'),false);
+});
+
+test('a still hold prepares the correct passage for reverse travel',()=>{
+  const {film,stage}=setup({landscape:['one.mp4','two.mp4','three.mp4']});
+  const hold={settled:true,scene:2,passage:2,amount:0,stillReady:true};
+  film.update(hold,true,-1);assert.equal(film.active.url,'two.mp4');
+  film.active.video.loaded();film.active.video.finishSeek();
+  assert.equal(stage.classList.contains('has-film'),false);
+  film.update(frame(.9,1),true,-1);film.active.video.finishSeek();
+  assert.equal(stage.classList.contains('has-film'),true);
+});
+
+test('reversing at a still hold never evicts the movie being prepared',()=>{
+  const {film}=setup({landscape:['one.mp4','two.mp4','three.mp4']});
+  const hold={settled:true,scene:1,passage:1,amount:0,stillReady:true};
+  film.update(hold,true,1);const prepared=film.active;prepared.video.loaded();
+  // Cache order is two, three. Reverse from scene 2 needs two, one.
+  film.update({...hold,scene:2,passage:2},true,-1);
+  assert.equal(film.active,prepared);
+  assert.equal(prepared.disposed,false,'preparing the neighbour must preserve the active decoder');
+  assert.equal(film.entries.has('one.mp4'),true);
+  assert.equal(film.entries.size,2);
 });

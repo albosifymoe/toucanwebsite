@@ -22,7 +22,7 @@ On desktop, the hero contains four reading stops joined by three real animation 
 
 Phones, narrow windows (900px or less), and touch-first tablets use one illustrated hero and ordinary page scrolling. “Watch our story” opens an optional 720×1280, 24 fps H.264 film with native controls. Its source is assigned only after a tap; closing the player unloads it. Without JavaScript or native dialog support, the same link opens the MP4 directly. The mobile layout does not depend on JavaScript and never stacks the four desktop scenes. See [mobile story delivery and checks](docs/mobile-story.md).
 
-Each movie has a 2K and 4K browser version. The controller selects the appropriate tier, uses one outstanding seek, retains at most two decoders, and falls back to 4K stills on media errors, reduced motion or constrained layouts.
+Each movie has a 2K and 4K browser version. The controller uses the 2K tier for responsive interactive seeking and the original 4K stills at reading stops. It uses one outstanding seek per decoder, retains at most two decoders, and also uses stills on media errors or reduced motion. See [the desktop motion and thumbnail review](docs/desktop-motion-and-thumbnails.md) for measurements and review limits.
 
 The original high-resolution production files and complete generation records are in the parent workspace, outside this deployable site. Five unchanged browser passages are preserved in ../production/browser-delivery/ and copied into dist/assets in 2K and 4K. The repaired portrait Create → Launch passage is also included in dist/assets in both tiers. All twelve files must ship with the site. No further generative jobs are authorized following the user's credit stop on 15 September 2026.
 
@@ -48,6 +48,6 @@ Run `node verify-site.mjs` while the preview runs on port 4174, or set `PREVIEW_
 
 ## Validation
 
-Run `node --test story-model.test.mjs film-controller.test.mjs presentation-symbols.test.mjs` (15 focused cases). The 16 September repair adds persistent frame visibility, neighbor preparation, explicit reading/action spans, interruption and frame-interior seeking. The 19 September mobile fallback prevents phones and touch-first tablets from entering that video-seeking mode. Automatic snapping and whole-scene dissolves are removed.
+Run `node --test story-model.test.mjs film-controller.test.mjs presentation-symbols.test.mjs` (19 focused cases). The 16 September repair adds persistent frame visibility, neighbor preparation, explicit reading/action spans, interruption and frame-interior seeking. The 19 September mobile fallback prevents phones and touch-first tablets from entering that video-seeking mode. Automatic snapping and whole-scene dissolves are removed.
 
 Actual browser frame-coverage captures and the source repair are documented in [the implementation report](../planning/MOTION-FIX-IMPLEMENTATION.md). All six forward passages and reverse traversal are checked at desktop and portrait sizes. Real touch hardware, Safari and hosting performance remain release checks. The repaired prototype is deployed to https://staging.toucan.ly; the live WordPress site remains unchanged.
