@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-09",
+  "tool": "built-in image_gen.imagegen",
+  "mode": "referenced_image_paths edit",
+  "task": "01a12102-d7c4-7491-9645-2c685914d2c2",
+  "edits": [
+    {
+      "slug": "hackathon",
+      "input": "artifacts/project-headers/guides/hackathon.png",
+      "prompt": "This image is an INPAINTING EDIT TARGET already framed at the correct final 1920x1080 ratio. Bright MAGENTA (#ff00ff) regions are a fill mask, NOT part of the design. Keep canvas size and every unmasked pixel at its exact position. Fill only magenta. Do not recompose, zoom, stretch, rescale or shift anything in the original center. Replace the magenta side strips ONLY with perfectly matched plain grainy red background. No white curves or other motifs in the added strips. ALL the white contour lines are already fully within the center; don't extend them. Match red colour, exposure and grain exactly at x420 and x1500. Preserve fist, forearm, white lines and all unmasked center pixels precisely. Return the completed full rectangular 16:9 image, with zero magenta and no border. The original central rectangle will be restored pixel-for-pixel afterwards, so boundary matching is the highest priority. Output at maximum native resolution.",
+      "generatedFile": "exec-4dd8e780-80e4-4d81-aa7c-95124471e0c1.png"
+    },
+    {
+      "slug": "septimus-consulting",
+      "input": "artifacts/project-headers/guides/septimus-consulting.png",
+      "prompt": "This image is an INPAINTING EDIT TARGET already framed at the correct final 1920x1080 ratio. Bright MAGENTA (#ff00ff) regions are a fill mask, NOT part of the design. Keep canvas size and every unmasked pixel at its exact position. Fill only magenta. Do not recompose, zoom, stretch, rescale or shift anything in the original center. Replace only the narrow magenta left/right strips with seamless continuation of this exact photographed stone facade, pavement and right edge of the tram. At x150 and x1770 join the existing horizontal courses, curb lines, rails and tram body at the EXACT SAME HEIGHT and angle as the adjacent original. Absolutely no geometric changes to the original photo. The posters, designs and lettering must be preserved exactly. No new posters or lettering. Return the completed full rectangular 16:9 image, with zero magenta and no border. The original central rectangle will be restored pixel-for-pixel afterwards, so boundary matching is the highest priority. Output at maximum native resolution.",
+      "generatedFile": "exec-d9fec9a0-256e-4361-ad29-7f10b83a992f.png"
+    },
+    {
+      "slug": "shake-up",
+      "input": "artifacts/project-headers/guides/shake-up.png",
+      "prompt": "This image is an INPAINTING EDIT TARGET already framed at the correct final 1920x1080 ratio. Bright MAGENTA (#ff00ff) regions are a fill mask, NOT part of the design. Keep canvas size and every unmasked pixel at its exact position. Fill only magenta. Do not recompose, zoom, stretch, rescale or shift anything in the original center. Replace only the magenta top/bottom strips: continue the existing flowing chocolate swirls into the top margin and cream/swirls into the bottom margin. At y220 and y860 the shapes must join precisely. Do not move, resize or crop the original central strip, cup, original UP logo or Arabic lettering. No new text, no new cups. Keep the original artwork unmodified. Return the completed full rectangular 16:9 image, with zero magenta and no border. The original central rectangle will be restored pixel-for-pixel afterwards, so boundary matching is the highest priority. Output at maximum native resolution.",
+      "generatedFile": "exec-4f0a4b2d-decd-4fa9-9a2c-b3e8a6f7d5c1.png"
+    },
+    {
+      "slug": "vanex",
+      "input": "artifacts/project-headers/guides/vanex.png",
+      "prompt": "Image 1 is an INPAINTING EDIT TARGET, already laid out at exactly 1920x1080 16:9. The bright MAGENTA (#ff00ff) side strips are a fill mask, NOT design. Replace ONLY those magenta pixels with seamless image extension. Lock every non-magenta pixel at its exact current position and size; do not redraw, stretch, move, zoom, crop or reframe the center. Continue only the navy-blue night background and low cyan/magenta illuminated floor. At x420 and x1500 join the existing scene at exactly the original colours and floor height. Complete only the cropped part of the existing blurred lantern at the left boundary. No extra lanterns, objects, vans, bags, logos or text. The original Arabic sign, all VANEX logos and all objects must remain unchanged. Return the completed 16:9 rectangle with no magenta, no border, maximum native output quality. The complete original center will be restored pixel-for-pixel on top afterwards; exact matching at the mask boundaries is essential.",
+      "generatedFile": "exec-766d7d33-1d58-4978-a73f-611340b21510.png"
+    },
+    {
+      "slug": "biscotti",
+      "input": "artifacts/project-headers/guides/biscotti.png",
+      "prompt": "Image 1 is an INPAINTING EDIT TARGET, already laid out at exactly 1920x1080 16:9. The bright MAGENTA (#ff00ff) side strips are a fill mask, NOT design. Replace ONLY those magenta pixels with seamless image extension. Lock every non-magenta pixel at its exact current position and size; do not redraw, stretch, move, zoom, crop or reframe the center. Continue the close-up red-velvet cookie photography naturally LEFT and RIGHT, matching each exact cookie layer height, curved edge, focus and red crumb texture at x420 and x1500. No new lettering, graphics or logos. Do not move or resize the original cookie stack or the central original white Biscotti / warm bites logotype. Return the completed 16:9 rectangle with no magenta, no border, maximum native output quality. The complete original center will be restored pixel-for-pixel on top afterwards; exact matching at the mask boundaries is essential.",
+      "generatedFile": "exec-0934bcdf-4a6a-423d-ac6d-9749447537e8.png"
+    },
+    {
+      "slug": "msh-mkanah",
+      "input": "artifacts/project-headers/guides/msh-mkanah.png",
+      "prompt": "Image 1 is an INPAINTING EDIT TARGET, already laid out at exactly 1920x1080 16:9. The bright MAGENTA (#ff00ff) side strips are a fill mask, NOT design. Replace ONLY those magenta pixels with seamless image extension. Lock every non-magenta pixel at its exact current position and size; do not redraw, stretch, move, zoom, crop or reframe the center. Continue only the photographed wall, sidewalk, curb, road and their shadows. Left edge is plain black unprinted wall. Right edge may show only the natural continuation/end of the existing poster already cut by the right boundary, matching the same existing type shapes without introducing any new slogans or designs. Align the lintel, poster baseline, curb and shadow at exactly the same heights as at x150 and x1770. Do not alter any original campaign posters, original Arabic text, numbers or pedestrians. No new people or designs. Return the completed 16:9 rectangle with no magenta, no border, maximum native output quality. The complete original center will be restored pixel-for-pixel on top afterwards; exact matching at the mask boundaries is essential.",
+      "generatedFile": "exec-40c7957f-c21b-4e57-b232-933d5344868a.png"
+    },
+    {
+      "slug": "16-days-of-activism",
+      "input": "artifacts/project-headers/guides/16-days-of-activism.png",
+      "prompt": "Image 1 is an INPAINTING EDIT TARGET, already laid out at exactly 1920x1080 16:9. The bright MAGENTA (#ff00ff) side strips are a fill mask, NOT design. Replace ONLY those magenta pixels with seamless image extension. Lock every non-magenta pixel at its exact current position and size; do not redraw, stretch, move, zoom, crop or reframe the center. Continue only the dark wood open doors, shadowy walls and matching warm interior architectural environment in the left/right magenta strips. Match exact door edges, perspective and colours at x285 and x1635. No new people, objects, text or logos. The woman, mannequin, Arabic calligraphy and original partner logos inside the central image must stay precisely unchanged. Return the completed 16:9 rectangle with no magenta, no border, maximum native output quality. The complete original center will be restored pixel-for-pixel on top afterwards; exact matching at the mask boundaries is essential.",
+      "generatedFile": "exec-5c0b8211-3b2c-4e3a-b511-f0514cf4fbca.png"
+    }
+  ]
+}

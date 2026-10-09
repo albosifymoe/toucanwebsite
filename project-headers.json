@@ -1,0 +1,454 @@
+{
+  "septimus-consulting": {
+    "src": "assets/project-headers/septimus-consulting-1600.webp",
+    "width": 3200,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "assets/project-headers/septimus-consulting-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 106992
+      },
+      {
+        "src": "assets/project-headers/septimus-consulting-1600.webp",
+        "width": 1600,
+        "height": 900,
+        "bytes": 400042
+      },
+      {
+        "src": "assets/project-headers/septimus-consulting-3200.webp",
+        "width": 3200,
+        "height": 1800,
+        "bytes": 1540150
+      }
+    ],
+    "source": "https://toucan.ly/wp-content/uploads/2024/09/6.jpg",
+    "sourceWidth": 6000,
+    "sourceHeight": 4000,
+    "generated": true,
+    "sourceRectangle": {
+      "x": 250,
+      "y": 0,
+      "width": 2700,
+      "height": 1800
+    },
+    "backgroundEdgeBlend": {
+      "left": 24,
+      "right": 24,
+      "top": 0,
+      "bottom": 0
+    }
+  },
+  "hackathon": {
+    "src": "assets/project-headers/hackathon-1600.webp",
+    "width": 3200,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "assets/project-headers/hackathon-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 74874
+      },
+      {
+        "src": "assets/project-headers/hackathon-1600.webp",
+        "width": 1600,
+        "height": 900,
+        "bytes": 443838
+      },
+      {
+        "src": "assets/project-headers/hackathon-3200.webp",
+        "width": 3200,
+        "height": 1800,
+        "bytes": 1815962
+      }
+    ],
+    "source": "https://toucan.ly/wp-content/uploads/2024/09/Layer-20.png",
+    "sourceWidth": 2000,
+    "sourceHeight": 2000,
+    "generated": true,
+    "sourceRectangle": {
+      "x": 700,
+      "y": 0,
+      "width": 1800,
+      "height": 1800
+    },
+    "backgroundEdgeBlend": {
+      "left": 24,
+      "right": 24,
+      "top": 0,
+      "bottom": 0
+    }
+  },
+  "shake-up": {
+    "src": "assets/project-headers/shake-up-1600.webp",
+    "width": 3000,
+    "height": 1688,
+    "variants": [
+      {
+        "src": "assets/project-headers/shake-up-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 164658
+      },
+      {
+        "src": "assets/project-headers/shake-up-1600.webp",
+        "width": 1600,
+        "height": 900,
+        "bytes": 411636
+      },
+      {
+        "src": "assets/project-headers/shake-up-3000.webp",
+        "width": 3000,
+        "height": 1688,
+        "bytes": 901230
+      }
+    ],
+    "source": "https://toucan.ly/wp-content/uploads/2024/09/post-3.jpg",
+    "sourceWidth": 3000,
+    "sourceHeight": 1000,
+    "generated": true,
+    "sourceRectangle": {
+      "x": 0,
+      "y": 344,
+      "width": 3000,
+      "height": 1000
+    },
+    "backgroundEdgeBlend": {
+      "left": 0,
+      "right": 0,
+      "top": 8,
+      "bottom": 12
+    }
+  },
+  "gorella-games": {
+    "src": "assets/project-headers/gorella-games-1600.webp",
+    "width": 2912,
+    "height": 1632,
+    "variants": [
+      {
+        "src": "assets/project-headers/gorella-games-800.webp",
+        "width": 800,
+        "height": 448,
+        "bytes": 69656
+      },
+      {
+        "src": "assets/project-headers/gorella-games-1600.webp",
+        "width": 1600,
+        "height": 897,
+        "bytes": 213996
+      },
+      {
+        "src": "assets/project-headers/gorella-games-2912.webp",
+        "width": 2912,
+        "height": 1632,
+        "bytes": 545754
+      }
+    ],
+    "source": "https://toucan.ly/wp-content/uploads/2024/09/cover2.png",
+    "sourceWidth": 2912,
+    "sourceHeight": 1632,
+    "generated": false,
+    "sourceRectangle": {
+      "x": 0,
+      "y": 0,
+      "width": 2912,
+      "height": 1632
+    },
+    "backgroundEdgeBlend": {
+      "left": 0,
+      "right": 0,
+      "top": 0,
+      "bottom": 0
+    }
+  },
+  "vanex": {
+    "src": "assets/project-headers/vanex-1600.webp",
+    "width": 3200,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "assets/project-headers/vanex-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 55290
+      },
+      {
+        "src": "assets/project-headers/vanex-1600.webp",
+        "width": 1600,
+        "height": 900,
+        "bytes": 168524
+      },
+      {
+        "src": "assets/project-headers/vanex-3200.webp",
+        "width": 3200,
+        "height": 1800,
+        "bytes": 483082
+      }
+    ],
+    "source": "https://toucan.ly/wp-content/uploads/2024/09/015-1-1.png",
+    "sourceWidth": 2048,
+    "sourceHeight": 2048,
+    "generated": true,
+    "sourceRectangle": {
+      "x": 700,
+      "y": 0,
+      "width": 1800,
+      "height": 1800
+    },
+    "backgroundEdgeBlend": {
+      "left": 24,
+      "right": 24,
+      "top": 0,
+      "bottom": 0
+    }
+  },
+  "tripoli-optic-group": {
+    "src": "assets/project-headers/tripoli-optic-group-1600.webp",
+    "width": 1920,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "assets/project-headers/tripoli-optic-group-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 63400
+      },
+      {
+        "src": "assets/project-headers/tripoli-optic-group-1600.webp",
+        "width": 1600,
+        "height": 900,
+        "bytes": 183754
+      },
+      {
+        "src": "assets/project-headers/tripoli-optic-group-1920.webp",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 256106
+      }
+    ],
+    "source": "https://toucan.ly/wp-content/uploads/2024/09/cover2024.png",
+    "sourceWidth": 1920,
+    "sourceHeight": 1080,
+    "generated": false,
+    "sourceRectangle": {
+      "x": 0,
+      "y": 0,
+      "width": 1920,
+      "height": 1080
+    },
+    "backgroundEdgeBlend": {
+      "left": 0,
+      "right": 0,
+      "top": 0,
+      "bottom": 0
+    }
+  },
+  "numo-pay": {
+    "src": "assets/project-headers/numo-pay-1600.webp",
+    "width": 1921,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "assets/project-headers/numo-pay-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 37610
+      },
+      {
+        "src": "assets/project-headers/numo-pay-1600.webp",
+        "width": 1600,
+        "height": 900,
+        "bytes": 97136
+      },
+      {
+        "src": "assets/project-headers/numo-pay-1921.webp",
+        "width": 1921,
+        "height": 1080,
+        "bytes": 130360
+      }
+    ],
+    "source": "https://toucan.ly/wp-content/uploads/2024/08/Asset-2.png",
+    "sourceWidth": 1921,
+    "sourceHeight": 1080,
+    "generated": false,
+    "sourceRectangle": {
+      "x": 0,
+      "y": 0,
+      "width": 1921,
+      "height": 1080
+    },
+    "backgroundEdgeBlend": {
+      "left": 0,
+      "right": 0,
+      "top": 0,
+      "bottom": 0
+    }
+  },
+  "fornello": {
+    "src": "assets/project-headers/fornello-1600.webp",
+    "width": 3200,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "assets/project-headers/fornello-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 64764
+      },
+      {
+        "src": "assets/project-headers/fornello-1600.webp",
+        "width": 1600,
+        "height": 900,
+        "bytes": 187792
+      },
+      {
+        "src": "assets/project-headers/fornello-3200.webp",
+        "width": 3200,
+        "height": 1800,
+        "bytes": 541370
+      }
+    ],
+    "source": "https://toucan.ly/wp-content/uploads/2024/08/Group-23.jpg",
+    "sourceWidth": 2000,
+    "sourceHeight": 2000,
+    "generated": false,
+    "sourceRectangle": {
+      "x": 700,
+      "y": 0,
+      "width": 1800,
+      "height": 1800
+    },
+    "backgroundEdgeBlend": {
+      "left": 0,
+      "right": 0,
+      "top": 0,
+      "bottom": 0
+    }
+  },
+  "biscotti": {
+    "src": "assets/project-headers/biscotti-1600.webp",
+    "width": 3200,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "assets/project-headers/biscotti-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 180294
+      },
+      {
+        "src": "assets/project-headers/biscotti-1600.webp",
+        "width": 1600,
+        "height": 900,
+        "bytes": 601986
+      },
+      {
+        "src": "assets/project-headers/biscotti-3200.webp",
+        "width": 3200,
+        "height": 1800,
+        "bytes": 2167968
+      }
+    ],
+    "source": "https://toucan.ly/wp-content/uploads/2024/08/Artboard-3.png",
+    "sourceWidth": 2000,
+    "sourceHeight": 2000,
+    "generated": true,
+    "sourceRectangle": {
+      "x": 700,
+      "y": 0,
+      "width": 1800,
+      "height": 1800
+    },
+    "backgroundEdgeBlend": {
+      "left": 24,
+      "right": 24,
+      "top": 0,
+      "bottom": 0
+    }
+  },
+  "msh-mkanah": {
+    "src": "assets/project-headers/msh-mkanah-1600.webp",
+    "width": 3200,
+    "height": 1800,
+    "variants": [
+      {
+        "src": "assets/project-headers/msh-mkanah-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 89754
+      },
+      {
+        "src": "assets/project-headers/msh-mkanah-1600.webp",
+        "width": 1600,
+        "height": 900,
+        "bytes": 375898
+      },
+      {
+        "src": "assets/project-headers/msh-mkanah-3200.webp",
+        "width": 3200,
+        "height": 1800,
+        "bytes": 1639452
+      }
+    ],
+    "source": "https://toucan.ly/wp-content/uploads/2024/08/5.jpg",
+    "sourceWidth": 6000,
+    "sourceHeight": 4000,
+    "generated": true,
+    "sourceRectangle": {
+      "x": 250,
+      "y": 0,
+      "width": 2700,
+      "height": 1800
+    },
+    "backgroundEdgeBlend": {
+      "left": 24,
+      "right": 24,
+      "top": 0,
+      "bottom": 0,
+      "keepRightPoster": true
+    }
+  },
+  "16-days-of-activism": {
+    "src": "assets/project-headers/16-days-of-activism-1600.webp",
+    "width": 2844,
+    "height": 1600,
+    "variants": [
+      {
+        "src": "assets/project-headers/16-days-of-activism-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 51394
+      },
+      {
+        "src": "assets/project-headers/16-days-of-activism-1600.webp",
+        "width": 1600,
+        "height": 900,
+        "bytes": 148100
+      },
+      {
+        "src": "assets/project-headers/16-days-of-activism-2844.webp",
+        "width": 2844,
+        "height": 1600,
+        "bytes": 842594
+      }
+    ],
+    "source": "https://toucan.ly/wp-content/uploads/2024/08/1-1.png",
+    "sourceWidth": 2000,
+    "sourceHeight": 1600,
+    "generated": true,
+    "sourceRectangle": {
+      "x": 422,
+      "y": 0,
+      "width": 2000,
+      "height": 1600
+    },
+    "backgroundEdgeBlend": {
+      "left": 24,
+      "right": 24,
+      "top": 0,
+      "bottom": 0
+    }
+  }
+}

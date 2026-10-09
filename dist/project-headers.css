@@ -1,0 +1,7 @@
+/* Complete landscape artwork; no crop or height cap at any breakpoint. */
+.project-lead > .project-header-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+}

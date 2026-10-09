@@ -2,6 +2,7 @@ import {readFile,writeFile,mkdir} from 'node:fs/promises';
 import {projects as editorial,services} from './site-content.mjs';
 const dist=new URL('./dist/',import.meta.url);
 const assets=JSON.parse(await readFile(new URL('./project-assets.json',import.meta.url),'utf8'));
+const projectHeaders=JSON.parse(await readFile(new URL('./project-headers.json',import.meta.url),'utf8'));
 const projects=assets.map(p=>({...p,...editorial.find(e=>e.slug===p.slug)}));
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const url=p=>`/work/${p.slug}.html`;
@@ -45,13 +46,14 @@ await write('contact.html',layout("Let's talk",'Tell Toucan about your idea. Sta
 
 for(const [index,p] of projects.entries()){
   const next=projects[(index+1)%projects.length];
+  const header=projectHeaders[p.slug];
   await write(`work/${p.slug}.html`,layout(p.title,`${p.line} ${p.intro}`,'work',`
 <section class="page-hero project-hero"><a class="back-link" href="/work.html">← All work</a><div class="project-kicker"><span>${esc(p.category)}</span><span>${String(index+1).padStart(2,'0')} / 11</span></div><h1>${esc(p.title)}</h1><p class="project-line">${esc(p.line)}</p></section>
-<figure class="project-lead">${img(p.cover,`${p.title} — featured project artwork`,true)}</figure>
+<figure class="project-lead"><img class="project-header-image" src="/${header.src}" srcset="${header.variants.map(v=>`/${v.src} ${v.width}w`).join(', ')}" sizes="(min-width: 1800px) 1575px, (max-width: 700px) 100vw, 87.6vw" width="${header.width}" height="${header.height}" alt="${esc(p.title)} — featured project artwork" fetchpriority="high" decoding="async"></figure>
 <section class="page-section project-story"><div><p class="section-label">The story</p><h2>${esc(p.intro)}</h2><dl class="project-facts"><div><dt>Client</dt><dd>${esc(p.client)}</dd></div><div><dt>Focus</dt><dd>${esc(p.category)}</dd></div></dl></div><div class="body-copy">${p.paragraphs.map(t=>`<p>${esc(t)}</p>`).join('')}${p.video?`<a class="text-link" href="${p.video}" target="_blank" rel="noopener">Watch the campaign film <span class="visually-hidden">on Vimeo (opens in a new tab)</span>${arrow}</a>`:''}</div></section>
 <section class="page-section project-gallery" aria-labelledby="gallery-title"><div class="gallery-heading"><h2 id="gallery-title">The work, in detail.</h2><span>${p.gallery.length} images</span></div><div class="gallery-grid">${p.gallery.map((g,i)=>`<a class="gallery-item ${g.width/g.height>1.6?'gallery-wide':''}" href="/${g.src}" data-gallery data-caption="${esc(p.title)} · ${String(i+1).padStart(2,'0')} / ${p.gallery.length}" aria-label="Enlarge ${esc(p.title)} artwork ${i+1}">${img(g,`${p.title} — project artwork ${i+1}`)}<span class="gallery-zoom" aria-hidden="true">＋</span></a>`).join('')}</div></section>
 <nav class="project-pagination page-section" aria-label="More projects"><a class="project-return" href="/work.html"><span aria-hidden="true">←</span> All work</a><a class="project-next" href="${url(next)}"><span class="small-label">Next story · ${esc(next.category)}</span><span>${esc(next.title)} ${arrow}</span></a></nav>
-<dialog class="lightbox" aria-label="Project artwork viewer"><div class="lightbox-bar"><p id="lightbox-caption"></p><button type="button" data-close aria-label="Close image viewer">Close ×</button></div><img class="lightbox-image" alt=""><div class="lightbox-controls"><button type="button" data-previous aria-label="Previous image">←</button><span>Use arrow keys to explore</span><button type="button" data-next aria-label="Next image">→</button></div></dialog>`));
+<dialog class="lightbox" aria-label="Project artwork viewer"><div class="lightbox-bar"><p id="lightbox-caption"></p><button type="button" data-close aria-label="Close image viewer">Close ×</button></div><img class="lightbox-image" alt=""><div class="lightbox-controls"><button type="button" data-previous aria-label="Previous image">←</button><span>Use arrow keys to explore</span><button type="button" data-next aria-label="Next image">→</button></div></dialog>`).replace('</head>','<link rel="stylesheet" href="/project-headers.css"></head>'));
 }
 
 // Preserve the approved home story; give the portfolio section a focused selection.
